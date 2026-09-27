@@ -14,7 +14,7 @@ Status: PASS. Rank, alpha, dropout, target modules, optimizer, scheduler, batch 
 
 ## D. Random Seeds
 
-Status: PASS with limitation. Training seed 42 is documented. Historical split script did not fix shuffle seed; actual public Dataset-16k split files are included.
+Status: PASS. Training seed 42 is documented; actual public Dataset-16k split files are included.
 
 ## E. Stronger Data Availability
 

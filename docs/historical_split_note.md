@@ -6,7 +6,7 @@ Verified exported splits:
 - Dataset-46k: 41,591 train + 4,622 validation = 46,213
 - Dataset-16k: 14,967 train + 1,664 validation = 16,631
 
-Final MER-LLM framework logs indicate:
+MER-LLM framework logs indicate:
 
 - Train examples: 25,020
 - Eval examples: 2,781

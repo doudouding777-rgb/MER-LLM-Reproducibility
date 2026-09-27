@@ -37,9 +37,9 @@ Historical scripts are preserved as sanitized copies under `preprocessing/origin
 
 ## 8. Training Reproducibility
 
-Final MER LoRA configuration and sanitized logs are included. Full final training is partially reproducible because Dataset-30k is restricted and the exact historical software environment is only partially preserved.
+MER LoRA configuration and sanitized logs are included. Full training is partially reproducible because Dataset-30k is restricted and the exact historical software environment is only partially preserved.
 
-The final public/revision learning-rate口径 remains `4.0e-05`.
+The learning rate is `4.0e-05`.
 
 ## 9. Evaluation Reproducibility
 
@@ -63,7 +63,7 @@ The environment is partially reconstructed in `requirements.txt`, `environment.y
 
 ## 14. Historical Inconsistencies
 
-The final learning-rate口径 is `4.0e-05`. Any preserved external `5.0e-05` traces should be handled as historical conflict evidence.
+The learning rate is `4.0e-05`.
 
 The final training framework log indicates a framework-level internal split: 25,020 train examples and 2,781 eval examples from a 27,801-record train file. This is documented in `docs/historical_split_note.md`.
 

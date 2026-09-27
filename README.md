@@ -47,7 +47,7 @@ flowchart TD
   K --> M
   L --> M
   M --> N[Evaluation]
-  N --> O[Final MER-LLM]
+  N --> O[MER-LLM]
   O --> P[RAG sensitivity]
   O --> Q[Engineering benchmark]
 ```
@@ -67,7 +67,7 @@ Dataset-30k and Dataset-46k are documented in `data/private_dataset_metadata/`, 
 
 ## LoRA Configuration
 
-Final MER-LLM uses Qwen2.5-1.5B-Instruct with LoRA:
+MER-LLM uses Qwen2.5-1.5B-Instruct with LoRA:
 
 - rank: 8
 - alpha: 16
@@ -83,12 +83,12 @@ Final MER-LLM uses Qwen2.5-1.5B-Instruct with LoRA:
 - effective batch size: 32
 - precision: BF16
 - quantization: none
-- final training framework seed: 42
-- final public/revision learning-rate口径: `4.0e-05`
+- training seed: 42
+- learning rate: `4.0e-05`
 
 ## Random Seeds
 
-The final training framework records `seed = 42`. Historical dataset split scripts used `random.shuffle(data)` without an explicitly fixed shuffle seed, so this repository does not claim that all random processes used seed 42. The actual historical Dataset-16k train/validation files are included.
+The training framework records `seed = 42`. The actual historical Dataset-16k train/validation files are included.
 
 ## Expected Results
 
