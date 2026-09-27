@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "MER-LLM: an efficient, lightweight large language model for marine ecosystem restoration domain knowledge support"
+message: "If you use this repository, please cite the associated MER-LLM manuscript."
+type: software
+authors:
+  - family-names: "Author"
+    given-names: "To be completed"
+repository-code: "https://github.com/TO_BE_COMPLETED/MER-LLM-Reproducibility"
+license: "TO_BE_DETERMINED"
+date-released: "2026-09-27"

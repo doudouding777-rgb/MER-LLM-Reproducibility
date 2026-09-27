@@ -1,0 +1,22 @@
+name: mer-llm-reproducibility
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pyyaml
+  - tqdm
+  - pip:
+      - torch
+      - transformers
+      - peft
+      - datasets
+      - accelerate
+      - sentence-transformers
+      - chromadb

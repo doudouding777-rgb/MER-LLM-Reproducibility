@@ -1,0 +1,5 @@
+dataset,records,public_record_level,notes
+civil3-civil7,39429,no,source pool count
+Dataset-30k,30890,no,metadata only
+Dataset-46k,46213,no,metadata only
+Dataset-16k,16631,yes,public dataset example

@@ -1,0 +1,9 @@
+{
+  "fields": [
+    "instruction",
+    "input",
+    "output",
+    "system"
+  ],
+  "format": "Alpaca-style JSON list"
+}

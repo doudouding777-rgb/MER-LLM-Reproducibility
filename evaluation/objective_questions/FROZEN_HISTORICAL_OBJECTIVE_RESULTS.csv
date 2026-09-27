@@ -1,0 +1,4 @@
+﻿model_state,model,dataset,epochs,set1_correct,set1_total,set2_choice_correct,set2_choice_total,set2_judge_correct,set2_judge_total,total_correct,total_items,accuracy_percent,source
+Base,Qwen2.5-1.5B-Instruct,none/base,none/base,428,550,186,300,206,250,820,1100,74.54545454545455,Historical manual scoring ledger in xlsx
+MER,Qwen2.5-1.5B-Instruct,Dataset-30k,4,442,550,204,300,219,250,865,1100,78.63636363636364,Historical manual scoring ledger in xlsx
+Absolute improvement,MER - Base,Dataset-30k,4,14,550,18,300,13,250,45,1100,4.090909090909091,Difference between frozen historical manual scores

@@ -1,0 +1,15 @@
+# Partially reconstructed from preserved MER-LLM workflow.
+# Pin exact versions only after author/environment confirmation.
+torch
+transformers
+peft
+datasets
+accelerate
+sentence-transformers
+chromadb
+scikit-learn
+scipy
+numpy
+pandas
+PyYAML
+tqdm

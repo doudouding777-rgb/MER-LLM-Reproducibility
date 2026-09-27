@@ -1,0 +1,2 @@
+﻿comparison,both_correct,base_wrong_mer_correct,base_correct_mer_wrong,both_wrong,discordant_total,mcnemar_chi2_continuity_corrected,exact_binomial_two_sided_p,status
+"MER vs Base, all 1100 objective items",739,126,81,154,207,9.352657004830919,0.002150185527782211,computed_from_confirmed_historical_human_word_traces

@@ -1,0 +1,1054 @@
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file vocab.json
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file merges.txt
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file tokenizer.json
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file added_tokens.json
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file special_tokens_map.json
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file tokenizer_config.json
+[INFO|2025-07-10 14:25:51] tokenization_utils_base.py:2021 >> loading file chat_template.jinja
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2299 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-07-10 14:25:52] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 14:25:52] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file vocab.json
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file merges.txt
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file tokenizer.json
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file added_tokens.json
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file special_tokens_map.json
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file tokenizer_config.json
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2021 >> loading file chat_template.jinja
+[INFO|2025-07-10 14:25:52] tokenization_utils_base.py:2299 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-07-10 14:25:52] logging.py:143 >> Loading dataset train.json...
+[INFO|2025-07-10 14:26:03] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 14:26:03] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 14:26:03] logging.py:143 >> KV cache is disabled during training.
+[INFO|2025-07-10 14:26:03] modeling_utils.py:1148 >> loading weights file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/model.safetensors
+[INFO|2025-07-10 14:26:03] modeling_utils.py:2241 >> Instantiating Qwen2ForCausalLM model under default dtype torch.bfloat16.
+[INFO|2025-07-10 14:26:03] configuration_utils.py:1135 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+[INFO|2025-07-10 14:26:05] modeling_utils.py:5131 >> All model checkpoint weights were used when initializing Qwen2ForCausalLM.
+
+[INFO|2025-07-10 14:26:05] modeling_utils.py:5139 >> All the weights of Qwen2ForCausalLM were initialized from the model checkpoint at <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2ForCausalLM for predictions without further training.
+[INFO|2025-07-10 14:26:05] configuration_utils.py:1088 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/generation_config.json
+[INFO|2025-07-10 14:26:05] configuration_utils.py:1135 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.1,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|2025-07-10 14:26:05] logging.py:143 >> Gradient checkpointing enabled.
+[INFO|2025-07-10 14:26:05] logging.py:143 >> Using torch SDPA for faster training and inference.
+[INFO|2025-07-10 14:26:05] logging.py:143 >> Upcasting trainable params to float32.
+[INFO|2025-07-10 14:26:05] logging.py:143 >> Fine-tuning method: LoRA
+[INFO|2025-07-10 14:26:05] logging.py:143 >> Found linear modules: o_proj,v_proj,down_proj,gate_proj,q_proj,up_proj,k_proj
+[INFO|2025-07-10 14:26:05] logging.py:143 >> trainable params: 9,232,384 || all params: 1,552,946,688 || trainable%: 0.5945
+[INFO|2025-07-10 14:26:06] trainer.py:756 >> Using auto half precision backend
+[INFO|2025-07-10 14:26:06] logging.py:143 >> Using LoRA+ optimizer with loraplus lr ratio 0.01.
+[INFO|2025-07-10 14:26:06] trainer.py:2409 >> ***** Running training *****
+[INFO|2025-07-10 14:26:06] trainer.py:2410 >>   Num examples = 25,020
+[INFO|2025-07-10 14:26:06] trainer.py:2411 >>   Num Epochs = 4
+[INFO|2025-07-10 14:26:06] trainer.py:2412 >>   Instantaneous batch size per device = 4
+[INFO|2025-07-10 14:26:06] trainer.py:2415 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|2025-07-10 14:26:06] trainer.py:2416 >>   Gradient Accumulation steps = 8
+[INFO|2025-07-10 14:26:06] trainer.py:2417 >>   Total optimization steps = 3,128
+[INFO|2025-07-10 14:26:06] trainer.py:2418 >>   Number of trainable parameters = 9,232,384
+[INFO|2025-07-10 14:26:25] logging.py:143 >> {'loss': 1.4554, 'learning_rate': 6.6667e-07, 'epoch': 0.01, 'throughput': 5933.92}
+[INFO|2025-07-10 14:26:42] logging.py:143 >> {'loss': 1.4626, 'learning_rate': 1.5000e-06, 'epoch': 0.01, 'throughput': 6111.81}
+[INFO|2025-07-10 14:27:00] logging.py:143 >> {'loss': 1.5232, 'learning_rate': 2.3333e-06, 'epoch': 0.02, 'throughput': 6176.61}
+[INFO|2025-07-10 14:27:17] logging.py:143 >> {'loss': 1.4798, 'learning_rate': 3.1667e-06, 'epoch': 0.03, 'throughput': 6206.48}
+[INFO|2025-07-10 14:27:37] logging.py:143 >> {'loss': 1.4368, 'learning_rate': 4.0000e-06, 'epoch': 0.03, 'throughput': 6197.87}
+[INFO|2025-07-10 14:27:54] logging.py:143 >> {'loss': 1.4850, 'learning_rate': 4.8333e-06, 'epoch': 0.04, 'throughput': 6222.18}
+[INFO|2025-07-10 14:28:13] logging.py:143 >> {'loss': 1.4105, 'learning_rate': 5.6667e-06, 'epoch': 0.04, 'throughput': 6230.02}
+[INFO|2025-07-10 14:28:31] logging.py:143 >> {'loss': 1.4541, 'learning_rate': 6.5000e-06, 'epoch': 0.05, 'throughput': 6240.91}
+[INFO|2025-07-10 14:28:52] logging.py:143 >> {'loss': 1.4197, 'learning_rate': 7.3333e-06, 'epoch': 0.06, 'throughput': 6238.29}
+[INFO|2025-07-10 14:29:10] logging.py:143 >> {'loss': 1.4342, 'learning_rate': 8.1667e-06, 'epoch': 0.06, 'throughput': 6240.88}
+[INFO|2025-07-10 14:29:30] logging.py:143 >> {'loss': 1.4224, 'learning_rate': 9.0000e-06, 'epoch': 0.07, 'throughput': 6235.70}
+[INFO|2025-07-10 14:29:46] logging.py:143 >> {'loss': 1.4841, 'learning_rate': 9.8333e-06, 'epoch': 0.08, 'throughput': 6236.08}
+[INFO|2025-07-10 14:30:04] logging.py:143 >> {'loss': 1.4220, 'learning_rate': 1.0667e-05, 'epoch': 0.08, 'throughput': 6228.61}
+[INFO|2025-07-10 14:30:21] logging.py:143 >> {'loss': 1.4796, 'learning_rate': 1.1500e-05, 'epoch': 0.09, 'throughput': 6233.06}
+[INFO|2025-07-10 14:30:41] logging.py:143 >> {'loss': 1.4086, 'learning_rate': 1.2333e-05, 'epoch': 0.10, 'throughput': 6227.78}
+[INFO|2025-07-10 14:30:59] logging.py:143 >> {'loss': 1.4615, 'learning_rate': 1.3167e-05, 'epoch': 0.10, 'throughput': 6233.67}
+[INFO|2025-07-10 14:31:16] logging.py:143 >> {'loss': 1.5010, 'learning_rate': 1.4000e-05, 'epoch': 0.11, 'throughput': 6237.12}
+[INFO|2025-07-10 14:31:34] logging.py:143 >> {'loss': 1.5009, 'learning_rate': 1.4833e-05, 'epoch': 0.12, 'throughput': 6242.35}
+[INFO|2025-07-10 14:31:54] logging.py:143 >> {'loss': 1.4302, 'learning_rate': 1.5667e-05, 'epoch': 0.12, 'throughput': 6238.22}
+[INFO|2025-07-10 14:32:15] logging.py:143 >> {'loss': 1.3746, 'learning_rate': 1.6500e-05, 'epoch': 0.13, 'throughput': 6236.06}
+[INFO|2025-07-10 14:32:34] logging.py:143 >> {'loss': 1.5121, 'learning_rate': 1.7333e-05, 'epoch': 0.13, 'throughput': 6236.85}
+[INFO|2025-07-10 14:32:51] logging.py:143 >> {'loss': 1.4803, 'learning_rate': 1.8167e-05, 'epoch': 0.14, 'throughput': 6239.68}
+[INFO|2025-07-10 14:33:10] logging.py:143 >> {'loss': 1.4276, 'learning_rate': 1.9000e-05, 'epoch': 0.15, 'throughput': 6238.84}
+[INFO|2025-07-10 14:33:28] logging.py:143 >> {'loss': 1.4553, 'learning_rate': 1.9833e-05, 'epoch': 0.15, 'throughput': 6236.38}
+[INFO|2025-07-10 14:33:45] logging.py:143 >> {'loss': 1.4668, 'learning_rate': 2.0667e-05, 'epoch': 0.16, 'throughput': 6234.23}
+[INFO|2025-07-10 14:34:04] logging.py:143 >> {'loss': 1.4758, 'learning_rate': 2.1500e-05, 'epoch': 0.17, 'throughput': 6233.69}
+[INFO|2025-07-10 14:34:22] logging.py:143 >> {'loss': 1.4734, 'learning_rate': 2.2333e-05, 'epoch': 0.17, 'throughput': 6234.11}
+[INFO|2025-07-10 14:34:41] logging.py:143 >> {'loss': 1.4422, 'learning_rate': 2.3167e-05, 'epoch': 0.18, 'throughput': 6232.81}
+[INFO|2025-07-10 14:34:59] logging.py:143 >> {'loss': 1.4405, 'learning_rate': 2.4000e-05, 'epoch': 0.19, 'throughput': 6230.85}
+[INFO|2025-07-10 14:35:19] logging.py:143 >> {'loss': 1.3969, 'learning_rate': 2.4833e-05, 'epoch': 0.19, 'throughput': 6227.93}
+[INFO|2025-07-10 14:35:37] logging.py:143 >> {'loss': 1.4041, 'learning_rate': 2.5667e-05, 'epoch': 0.20, 'throughput': 6225.22}
+[INFO|2025-07-10 14:35:56] logging.py:143 >> {'loss': 1.4335, 'learning_rate': 2.6500e-05, 'epoch': 0.20, 'throughput': 6222.76}
+[INFO|2025-07-10 14:36:13] logging.py:143 >> {'loss': 1.4152, 'learning_rate': 2.7333e-05, 'epoch': 0.21, 'throughput': 6224.59}
+[INFO|2025-07-10 14:36:33] logging.py:143 >> {'loss': 1.3741, 'learning_rate': 2.8167e-05, 'epoch': 0.22, 'throughput': 6225.05}
+[INFO|2025-07-10 14:36:52] logging.py:143 >> {'loss': 1.4007, 'learning_rate': 2.9000e-05, 'epoch': 0.22, 'throughput': 6222.76}
+[INFO|2025-07-10 14:37:11] logging.py:143 >> {'loss': 1.4602, 'learning_rate': 2.9833e-05, 'epoch': 0.23, 'throughput': 6222.83}
+[INFO|2025-07-10 14:37:28] logging.py:143 >> {'loss': 1.4243, 'learning_rate': 3.0667e-05, 'epoch': 0.24, 'throughput': 6222.58}
+[INFO|2025-07-10 14:37:46] logging.py:143 >> {'loss': 1.4471, 'learning_rate': 3.1500e-05, 'epoch': 0.24, 'throughput': 6224.31}
+[INFO|2025-07-10 14:38:04] logging.py:143 >> {'loss': 1.4335, 'learning_rate': 3.2333e-05, 'epoch': 0.25, 'throughput': 6225.33}
+[INFO|2025-07-10 14:38:23] logging.py:143 >> {'loss': 1.4172, 'learning_rate': 3.3167e-05, 'epoch': 0.26, 'throughput': 6224.67}
+[INFO|2025-07-10 14:38:41] logging.py:143 >> {'loss': 1.3505, 'learning_rate': 3.4000e-05, 'epoch': 0.26, 'throughput': 6227.13}
+[INFO|2025-07-10 14:38:59] logging.py:143 >> {'loss': 1.3950, 'learning_rate': 3.4833e-05, 'epoch': 0.27, 'throughput': 6227.21}
+[INFO|2025-07-10 14:39:19] logging.py:143 >> {'loss': 1.3609, 'learning_rate': 3.5667e-05, 'epoch': 0.27, 'throughput': 6226.58}
+[INFO|2025-07-10 14:39:36] logging.py:143 >> {'loss': 1.4334, 'learning_rate': 3.6500e-05, 'epoch': 0.28, 'throughput': 6229.18}
+[INFO|2025-07-10 14:39:53] logging.py:143 >> {'loss': 1.3903, 'learning_rate': 3.7333e-05, 'epoch': 0.29, 'throughput': 6230.09}
+[INFO|2025-07-10 14:40:12] logging.py:143 >> {'loss': 1.3317, 'learning_rate': 3.8167e-05, 'epoch': 0.29, 'throughput': 6232.11}
+[INFO|2025-07-10 14:40:30] logging.py:143 >> {'loss': 1.3401, 'learning_rate': 3.9000e-05, 'epoch': 0.30, 'throughput': 6231.82}
+[INFO|2025-07-10 14:40:48] logging.py:143 >> {'loss': 1.3371, 'learning_rate': 3.9833e-05, 'epoch': 0.31, 'throughput': 6231.43}
+[INFO|2025-07-10 14:41:07] logging.py:143 >> {'loss': 1.3468, 'learning_rate': 4.0667e-05, 'epoch': 0.31, 'throughput': 6232.24}
+[INFO|2025-07-10 14:41:25] logging.py:143 >> {'loss': 1.3214, 'learning_rate': 4.1500e-05, 'epoch': 0.32, 'throughput': 6233.33}
+[INFO|2025-07-10 14:41:42] logging.py:143 >> {'loss': 1.3693, 'learning_rate': 4.2333e-05, 'epoch': 0.33, 'throughput': 6234.09}
+[INFO|2025-07-10 14:42:01] logging.py:143 >> {'loss': 1.2983, 'learning_rate': 4.3167e-05, 'epoch': 0.33, 'throughput': 6235.58}
+[INFO|2025-07-10 14:42:21] logging.py:143 >> {'loss': 1.3112, 'learning_rate': 4.4000e-05, 'epoch': 0.34, 'throughput': 6236.16}
+[INFO|2025-07-10 14:42:39] logging.py:143 >> {'loss': 1.2938, 'learning_rate': 4.4833e-05, 'epoch': 0.35, 'throughput': 6237.85}
+[INFO|2025-07-10 14:42:57] logging.py:143 >> {'loss': 1.3299, 'learning_rate': 4.5667e-05, 'epoch': 0.35, 'throughput': 6239.27}
+[INFO|2025-07-10 14:43:15] logging.py:143 >> {'loss': 1.2930, 'learning_rate': 4.6500e-05, 'epoch': 0.36, 'throughput': 6240.60}
+[INFO|2025-07-10 14:43:33] logging.py:143 >> {'loss': 1.3544, 'learning_rate': 4.7333e-05, 'epoch': 0.36, 'throughput': 6240.79}
+[INFO|2025-07-10 14:43:50] logging.py:143 >> {'loss': 1.2781, 'learning_rate': 4.8167e-05, 'epoch': 0.37, 'throughput': 6242.37}
+[INFO|2025-07-10 14:44:08] logging.py:143 >> {'loss': 1.3235, 'learning_rate': 4.9000e-05, 'epoch': 0.38, 'throughput': 6244.01}
+[INFO|2025-07-10 14:44:27] logging.py:143 >> {'loss': 1.2715, 'learning_rate': 4.9833e-05, 'epoch': 0.38, 'throughput': 6243.90}
+[INFO|2025-07-10 14:44:47] logging.py:143 >> {'loss': 1.2753, 'learning_rate': 5.0000e-05, 'epoch': 0.39, 'throughput': 6244.28}
+[INFO|2025-07-10 14:45:06] logging.py:143 >> {'loss': 1.2837, 'learning_rate': 4.9999e-05, 'epoch': 0.40, 'throughput': 6244.84}
+[INFO|2025-07-10 14:45:24] logging.py:143 >> {'loss': 1.2739, 'learning_rate': 4.9997e-05, 'epoch': 0.40, 'throughput': 6244.98}
+[INFO|2025-07-10 14:45:43] logging.py:143 >> {'loss': 1.3053, 'learning_rate': 4.9994e-05, 'epoch': 0.41, 'throughput': 6245.18}
+[INFO|2025-07-10 14:46:00] logging.py:143 >> {'loss': 1.2949, 'learning_rate': 4.9991e-05, 'epoch': 0.42, 'throughput': 6246.81}
+[INFO|2025-07-10 14:46:19] logging.py:143 >> {'loss': 1.3245, 'learning_rate': 4.9987e-05, 'epoch': 0.42, 'throughput': 6247.77}
+[INFO|2025-07-10 14:46:37] logging.py:143 >> {'loss': 1.2352, 'learning_rate': 4.9982e-05, 'epoch': 0.43, 'throughput': 6248.73}
+[INFO|2025-07-10 14:46:56] logging.py:143 >> {'loss': 1.2699, 'learning_rate': 4.9977e-05, 'epoch': 0.43, 'throughput': 6249.15}
+[INFO|2025-07-10 14:47:13] logging.py:143 >> {'loss': 1.2889, 'learning_rate': 4.9970e-05, 'epoch': 0.44, 'throughput': 6250.33}
+[INFO|2025-07-10 14:47:33] logging.py:143 >> {'loss': 1.2711, 'learning_rate': 4.9963e-05, 'epoch': 0.45, 'throughput': 6249.85}
+[INFO|2025-07-10 14:47:51] logging.py:143 >> {'loss': 1.2602, 'learning_rate': 4.9955e-05, 'epoch': 0.45, 'throughput': 6250.99}
+[INFO|2025-07-10 14:48:09] logging.py:143 >> {'loss': 1.2810, 'learning_rate': 4.9946e-05, 'epoch': 0.46, 'throughput': 6252.21}
+[INFO|2025-07-10 14:48:27] logging.py:143 >> {'loss': 1.2508, 'learning_rate': 4.9937e-05, 'epoch': 0.47, 'throughput': 6253.15}
+[INFO|2025-07-10 14:48:45] logging.py:143 >> {'loss': 1.2231, 'learning_rate': 4.9927e-05, 'epoch': 0.47, 'throughput': 6254.06}
+[INFO|2025-07-10 14:49:03] logging.py:143 >> {'loss': 1.2409, 'learning_rate': 4.9916e-05, 'epoch': 0.48, 'throughput': 6254.68}
+[INFO|2025-07-10 14:49:21] logging.py:143 >> {'loss': 1.2676, 'learning_rate': 4.9904e-05, 'epoch': 0.49, 'throughput': 6254.62}
+[INFO|2025-07-10 14:49:39] logging.py:143 >> {'loss': 1.2596, 'learning_rate': 4.9891e-05, 'epoch': 0.49, 'throughput': 6254.17}
+[INFO|2025-07-10 14:49:58] logging.py:143 >> {'loss': 1.2498, 'learning_rate': 4.9878e-05, 'epoch': 0.50, 'throughput': 6254.41}
+[INFO|2025-07-10 14:50:17] logging.py:143 >> {'loss': 1.2275, 'learning_rate': 4.9864e-05, 'epoch': 0.51, 'throughput': 6254.62}
+[INFO|2025-07-10 14:50:37] logging.py:143 >> {'loss': 1.2422, 'learning_rate': 4.9849e-05, 'epoch': 0.51, 'throughput': 6251.73}
+[INFO|2025-07-10 14:50:58] logging.py:143 >> {'loss': 1.2832, 'learning_rate': 4.9833e-05, 'epoch': 0.52, 'throughput': 6249.53}
+[INFO|2025-07-10 14:51:15] logging.py:143 >> {'loss': 1.2726, 'learning_rate': 4.9817e-05, 'epoch': 0.52, 'throughput': 6249.69}
+[INFO|2025-07-10 14:51:32] logging.py:143 >> {'loss': 1.2461, 'learning_rate': 4.9800e-05, 'epoch': 0.53, 'throughput': 6250.68}
+[INFO|2025-07-10 14:51:52] logging.py:143 >> {'loss': 1.2397, 'learning_rate': 4.9782e-05, 'epoch': 0.54, 'throughput': 6251.05}
+[INFO|2025-07-10 14:52:10] logging.py:143 >> {'loss': 1.1983, 'learning_rate': 4.9763e-05, 'epoch': 0.54, 'throughput': 6251.75}
+[INFO|2025-07-10 14:52:28] logging.py:143 >> {'loss': 1.3385, 'learning_rate': 4.9744e-05, 'epoch': 0.55, 'throughput': 6251.69}
+[INFO|2025-07-10 14:52:46] logging.py:143 >> {'loss': 1.2624, 'learning_rate': 4.9724e-05, 'epoch': 0.56, 'throughput': 6251.86}
+[INFO|2025-07-10 14:53:04] logging.py:143 >> {'loss': 1.2304, 'learning_rate': 4.9703e-05, 'epoch': 0.56, 'throughput': 6252.15}
+[INFO|2025-07-10 14:53:23] logging.py:143 >> {'loss': 1.2436, 'learning_rate': 4.9681e-05, 'epoch': 0.57, 'throughput': 6252.52}
+[INFO|2025-07-10 14:53:41] logging.py:143 >> {'loss': 1.2474, 'learning_rate': 4.9658e-05, 'epoch': 0.58, 'throughput': 6253.50}
+[INFO|2025-07-10 14:53:58] logging.py:143 >> {'loss': 1.2195, 'learning_rate': 4.9635e-05, 'epoch': 0.58, 'throughput': 6254.62}
+[INFO|2025-07-10 14:54:17] logging.py:143 >> {'loss': 1.2751, 'learning_rate': 4.9611e-05, 'epoch': 0.59, 'throughput': 6254.91}
+[INFO|2025-07-10 14:54:35] logging.py:143 >> {'loss': 1.2482, 'learning_rate': 4.9586e-05, 'epoch': 0.59, 'throughput': 6254.28}
+[INFO|2025-07-10 14:54:52] logging.py:143 >> {'loss': 1.2506, 'learning_rate': 4.9561e-05, 'epoch': 0.60, 'throughput': 6253.90}
+[INFO|2025-07-10 14:55:11] logging.py:143 >> {'loss': 1.2339, 'learning_rate': 4.9534e-05, 'epoch': 0.61, 'throughput': 6252.89}
+[INFO|2025-07-10 14:55:30] logging.py:143 >> {'loss': 1.2644, 'learning_rate': 4.9507e-05, 'epoch': 0.61, 'throughput': 6253.01}
+[INFO|2025-07-10 14:55:48] logging.py:143 >> {'loss': 1.2033, 'learning_rate': 4.9480e-05, 'epoch': 0.62, 'throughput': 6252.88}
+[INFO|2025-07-10 14:56:05] logging.py:143 >> {'loss': 1.2340, 'learning_rate': 4.9451e-05, 'epoch': 0.63, 'throughput': 6253.77}
+[INFO|2025-07-10 14:56:23] logging.py:143 >> {'loss': 1.3409, 'learning_rate': 4.9422e-05, 'epoch': 0.63, 'throughput': 6254.40}
+[INFO|2025-07-10 14:56:41] logging.py:143 >> {'loss': 1.2517, 'learning_rate': 4.9392e-05, 'epoch': 0.64, 'throughput': 6254.92}
+[INFO|2025-07-10 14:56:41] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 14:56:41] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 14:56:41] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 14:58:13] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-500
+[INFO|2025-07-10 14:58:13] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 14:58:13] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 14:58:13] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-500/chat_template.jinja
+[INFO|2025-07-10 14:58:13] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-500/tokenizer_config.json
+[INFO|2025-07-10 14:58:13] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-500/special_tokens_map.json
+[INFO|2025-07-10 14:58:31] logging.py:143 >> {'loss': 1.2389, 'learning_rate': 4.9361e-05, 'epoch': 0.65, 'throughput': 5958.54}
+[INFO|2025-07-10 14:58:48] logging.py:143 >> {'loss': 1.2650, 'learning_rate': 4.9329e-05, 'epoch': 0.65, 'throughput': 5961.92}
+[INFO|2025-07-10 14:59:07] logging.py:143 >> {'loss': 1.2263, 'learning_rate': 4.9297e-05, 'epoch': 0.66, 'throughput': 5965.20}
+[INFO|2025-07-10 14:59:26] logging.py:143 >> {'loss': 1.2242, 'learning_rate': 4.9264e-05, 'epoch': 0.67, 'throughput': 5967.95}
+[INFO|2025-07-10 14:59:44] logging.py:143 >> {'loss': 1.2656, 'learning_rate': 4.9230e-05, 'epoch': 0.67, 'throughput': 5969.94}
+[INFO|2025-07-10 15:00:02] logging.py:143 >> {'loss': 1.2822, 'learning_rate': 4.9195e-05, 'epoch': 0.68, 'throughput': 5972.47}
+[INFO|2025-07-10 15:00:20] logging.py:143 >> {'loss': 1.2258, 'learning_rate': 4.9160e-05, 'epoch': 0.68, 'throughput': 5975.73}
+[INFO|2025-07-10 15:00:36] logging.py:143 >> {'loss': 1.2362, 'learning_rate': 4.9124e-05, 'epoch': 0.69, 'throughput': 5978.74}
+[INFO|2025-07-10 15:00:55] logging.py:143 >> {'loss': 1.2379, 'learning_rate': 4.9087e-05, 'epoch': 0.70, 'throughput': 5981.38}
+[INFO|2025-07-10 15:01:14] logging.py:143 >> {'loss': 1.2148, 'learning_rate': 4.9050e-05, 'epoch': 0.70, 'throughput': 5984.06}
+[INFO|2025-07-10 15:01:32] logging.py:143 >> {'loss': 1.2534, 'learning_rate': 4.9011e-05, 'epoch': 0.71, 'throughput': 5987.09}
+[INFO|2025-07-10 15:01:52] logging.py:143 >> {'loss': 1.2408, 'learning_rate': 4.8972e-05, 'epoch': 0.72, 'throughput': 5989.72}
+[INFO|2025-07-10 15:02:10] logging.py:143 >> {'loss': 1.2284, 'learning_rate': 4.8933e-05, 'epoch': 0.72, 'throughput': 5992.49}
+[INFO|2025-07-10 15:02:29] logging.py:143 >> {'loss': 1.2586, 'learning_rate': 4.8892e-05, 'epoch': 0.73, 'throughput': 5994.77}
+[INFO|2025-07-10 15:02:48] logging.py:143 >> {'loss': 1.2851, 'learning_rate': 4.8851e-05, 'epoch': 0.74, 'throughput': 5997.47}
+[INFO|2025-07-10 15:03:06] logging.py:143 >> {'loss': 1.2571, 'learning_rate': 4.8809e-05, 'epoch': 0.74, 'throughput': 6000.19}
+[INFO|2025-07-10 15:03:25] logging.py:143 >> {'loss': 1.2680, 'learning_rate': 4.8766e-05, 'epoch': 0.75, 'throughput': 6002.23}
+[INFO|2025-07-10 15:03:44] logging.py:143 >> {'loss': 1.2203, 'learning_rate': 4.8723e-05, 'epoch': 0.75, 'throughput': 6004.86}
+[INFO|2025-07-10 15:04:01] logging.py:143 >> {'loss': 1.2026, 'learning_rate': 4.8678e-05, 'epoch': 0.76, 'throughput': 6006.57}
+[INFO|2025-07-10 15:04:18] logging.py:143 >> {'loss': 1.2328, 'learning_rate': 4.8634e-05, 'epoch': 0.77, 'throughput': 6008.20}
+[INFO|2025-07-10 15:04:37] logging.py:143 >> {'loss': 1.2150, 'learning_rate': 4.8588e-05, 'epoch': 0.77, 'throughput': 6010.12}
+[INFO|2025-07-10 15:04:54] logging.py:143 >> {'loss': 1.2112, 'learning_rate': 4.8542e-05, 'epoch': 0.78, 'throughput': 6011.66}
+[INFO|2025-07-10 15:05:12] logging.py:143 >> {'loss': 1.2305, 'learning_rate': 4.8494e-05, 'epoch': 0.79, 'throughput': 6013.35}
+[INFO|2025-07-10 15:05:32] logging.py:143 >> {'loss': 1.2134, 'learning_rate': 4.8447e-05, 'epoch': 0.79, 'throughput': 6015.52}
+[INFO|2025-07-10 15:05:50] logging.py:143 >> {'loss': 1.2113, 'learning_rate': 4.8398e-05, 'epoch': 0.80, 'throughput': 6017.68}
+[INFO|2025-07-10 15:06:08] logging.py:143 >> {'loss': 1.2291, 'learning_rate': 4.8349e-05, 'epoch': 0.81, 'throughput': 6019.73}
+[INFO|2025-07-10 15:06:26] logging.py:143 >> {'loss': 1.2524, 'learning_rate': 4.8299e-05, 'epoch': 0.81, 'throughput': 6021.09}
+[INFO|2025-07-10 15:06:44] logging.py:143 >> {'loss': 1.2319, 'learning_rate': 4.8248e-05, 'epoch': 0.82, 'throughput': 6023.26}
+[INFO|2025-07-10 15:07:03] logging.py:143 >> {'loss': 1.2492, 'learning_rate': 4.8197e-05, 'epoch': 0.82, 'throughput': 6025.27}
+[INFO|2025-07-10 15:07:20] logging.py:143 >> {'loss': 1.2284, 'learning_rate': 4.8145e-05, 'epoch': 0.83, 'throughput': 6027.26}
+[INFO|2025-07-10 15:07:40] logging.py:143 >> {'loss': 1.1970, 'learning_rate': 4.8092e-05, 'epoch': 0.84, 'throughput': 6029.11}
+[INFO|2025-07-10 15:07:57] logging.py:143 >> {'loss': 1.2366, 'learning_rate': 4.8038e-05, 'epoch': 0.84, 'throughput': 6031.37}
+[INFO|2025-07-10 15:08:15] logging.py:143 >> {'loss': 1.1697, 'learning_rate': 4.7984e-05, 'epoch': 0.85, 'throughput': 6033.27}
+[INFO|2025-07-10 15:08:34] logging.py:143 >> {'loss': 1.2285, 'learning_rate': 4.7929e-05, 'epoch': 0.86, 'throughput': 6035.04}
+[INFO|2025-07-10 15:08:52] logging.py:143 >> {'loss': 1.2632, 'learning_rate': 4.7873e-05, 'epoch': 0.86, 'throughput': 6036.73}
+[INFO|2025-07-10 15:09:09] logging.py:143 >> {'loss': 1.2819, 'learning_rate': 4.7817e-05, 'epoch': 0.87, 'throughput': 6038.76}
+[INFO|2025-07-10 15:09:27] logging.py:143 >> {'loss': 1.2242, 'learning_rate': 4.7760e-05, 'epoch': 0.88, 'throughput': 6040.82}
+[INFO|2025-07-10 15:09:45] logging.py:143 >> {'loss': 1.2651, 'learning_rate': 4.7702e-05, 'epoch': 0.88, 'throughput': 6042.28}
+[INFO|2025-07-10 15:10:03] logging.py:143 >> {'loss': 1.2749, 'learning_rate': 4.7643e-05, 'epoch': 0.89, 'throughput': 6043.35}
+[INFO|2025-07-10 15:10:21] logging.py:143 >> {'loss': 1.2445, 'learning_rate': 4.7584e-05, 'epoch': 0.90, 'throughput': 6044.42}
+[INFO|2025-07-10 15:10:39] logging.py:143 >> {'loss': 1.2275, 'learning_rate': 4.7524e-05, 'epoch': 0.90, 'throughput': 6045.87}
+[INFO|2025-07-10 15:10:56] logging.py:143 >> {'loss': 1.2154, 'learning_rate': 4.7464e-05, 'epoch': 0.91, 'throughput': 6047.70}
+[INFO|2025-07-10 15:11:15] logging.py:143 >> {'loss': 1.1737, 'learning_rate': 4.7402e-05, 'epoch': 0.91, 'throughput': 6049.31}
+[INFO|2025-07-10 15:11:34] logging.py:143 >> {'loss': 1.2458, 'learning_rate': 4.7340e-05, 'epoch': 0.92, 'throughput': 6051.15}
+[INFO|2025-07-10 15:11:51] logging.py:143 >> {'loss': 1.2270, 'learning_rate': 4.7278e-05, 'epoch': 0.93, 'throughput': 6052.95}
+[INFO|2025-07-10 15:12:08] logging.py:143 >> {'loss': 1.2540, 'learning_rate': 4.7214e-05, 'epoch': 0.93, 'throughput': 6054.76}
+[INFO|2025-07-10 15:12:25] logging.py:143 >> {'loss': 1.2215, 'learning_rate': 4.7150e-05, 'epoch': 0.94, 'throughput': 6056.54}
+[INFO|2025-07-10 15:12:44] logging.py:143 >> {'loss': 1.2110, 'learning_rate': 4.7086e-05, 'epoch': 0.95, 'throughput': 6058.39}
+[INFO|2025-07-10 15:13:01] logging.py:143 >> {'loss': 1.2308, 'learning_rate': 4.7020e-05, 'epoch': 0.95, 'throughput': 6060.19}
+[INFO|2025-07-10 15:13:23] logging.py:143 >> {'loss': 1.1880, 'learning_rate': 4.6954e-05, 'epoch': 0.96, 'throughput': 6060.73}
+[INFO|2025-07-10 15:13:40] logging.py:143 >> {'loss': 1.2258, 'learning_rate': 4.6887e-05, 'epoch': 0.97, 'throughput': 6062.06}
+[INFO|2025-07-10 15:13:58] logging.py:143 >> {'loss': 1.2636, 'learning_rate': 4.6820e-05, 'epoch': 0.97, 'throughput': 6063.48}
+[INFO|2025-07-10 15:14:16] logging.py:143 >> {'loss': 1.2353, 'learning_rate': 4.6752e-05, 'epoch': 0.98, 'throughput': 6064.44}
+[INFO|2025-07-10 15:14:33] logging.py:143 >> {'loss': 1.2248, 'learning_rate': 4.6683e-05, 'epoch': 0.98, 'throughput': 6065.82}
+[INFO|2025-07-10 15:14:51] logging.py:143 >> {'loss': 1.2234, 'learning_rate': 4.6614e-05, 'epoch': 0.99, 'throughput': 6067.61}
+[INFO|2025-07-10 15:15:08] logging.py:143 >> {'loss': 1.2418, 'learning_rate': 4.6543e-05, 'epoch': 1.00, 'throughput': 6069.33}
+[INFO|2025-07-10 15:15:27] logging.py:143 >> {'loss': 1.2121, 'learning_rate': 4.6473e-05, 'epoch': 1.00, 'throughput': 6070.55}
+[INFO|2025-07-10 15:15:44] logging.py:143 >> {'loss': 1.2106, 'learning_rate': 4.6401e-05, 'epoch': 1.01, 'throughput': 6072.21}
+[INFO|2025-07-10 15:16:01] logging.py:143 >> {'loss': 1.2476, 'learning_rate': 4.6329e-05, 'epoch': 1.02, 'throughput': 6073.79}
+[INFO|2025-07-10 15:16:18] logging.py:143 >> {'loss': 1.2171, 'learning_rate': 4.6256e-05, 'epoch': 1.02, 'throughput': 6075.26}
+[INFO|2025-07-10 15:16:38] logging.py:143 >> {'loss': 1.2040, 'learning_rate': 4.6183e-05, 'epoch': 1.03, 'throughput': 6076.62}
+[INFO|2025-07-10 15:16:55] logging.py:143 >> {'loss': 1.3100, 'learning_rate': 4.6109e-05, 'epoch': 1.04, 'throughput': 6077.76}
+[INFO|2025-07-10 15:17:12] logging.py:143 >> {'loss': 1.2206, 'learning_rate': 4.6034e-05, 'epoch': 1.04, 'throughput': 6079.26}
+[INFO|2025-07-10 15:17:30] logging.py:143 >> {'loss': 1.1662, 'learning_rate': 4.5959e-05, 'epoch': 1.05, 'throughput': 6080.58}
+[INFO|2025-07-10 15:17:48] logging.py:143 >> {'loss': 1.2638, 'learning_rate': 4.5883e-05, 'epoch': 1.05, 'throughput': 6081.66}
+[INFO|2025-07-10 15:18:07] logging.py:143 >> {'loss': 1.2006, 'learning_rate': 4.5806e-05, 'epoch': 1.06, 'throughput': 6082.43}
+[INFO|2025-07-10 15:18:27] logging.py:143 >> {'loss': 1.1297, 'learning_rate': 4.5729e-05, 'epoch': 1.07, 'throughput': 6083.60}
+[INFO|2025-07-10 15:18:44] logging.py:143 >> {'loss': 1.2040, 'learning_rate': 4.5651e-05, 'epoch': 1.07, 'throughput': 6085.05}
+[INFO|2025-07-10 15:19:03] logging.py:143 >> {'loss': 1.1834, 'learning_rate': 4.5572e-05, 'epoch': 1.08, 'throughput': 6086.21}
+[INFO|2025-07-10 15:19:19] logging.py:143 >> {'loss': 1.2226, 'learning_rate': 4.5493e-05, 'epoch': 1.09, 'throughput': 6087.41}
+[INFO|2025-07-10 15:19:38] logging.py:143 >> {'loss': 1.1911, 'learning_rate': 4.5413e-05, 'epoch': 1.09, 'throughput': 6088.65}
+[INFO|2025-07-10 15:19:55] logging.py:143 >> {'loss': 1.2441, 'learning_rate': 4.5333e-05, 'epoch': 1.10, 'throughput': 6089.72}
+[INFO|2025-07-10 15:20:11] logging.py:143 >> {'loss': 1.2221, 'learning_rate': 4.5252e-05, 'epoch': 1.11, 'throughput': 6091.18}
+[INFO|2025-07-10 15:20:30] logging.py:143 >> {'loss': 1.2504, 'learning_rate': 4.5170e-05, 'epoch': 1.11, 'throughput': 6092.10}
+[INFO|2025-07-10 15:20:49] logging.py:143 >> {'loss': 1.2204, 'learning_rate': 4.5087e-05, 'epoch': 1.12, 'throughput': 6093.36}
+[INFO|2025-07-10 15:21:06] logging.py:143 >> {'loss': 1.1925, 'learning_rate': 4.5004e-05, 'epoch': 1.13, 'throughput': 6094.57}
+[INFO|2025-07-10 15:21:23] logging.py:143 >> {'loss': 1.2382, 'learning_rate': 4.4921e-05, 'epoch': 1.13, 'throughput': 6095.94}
+[INFO|2025-07-10 15:21:41] logging.py:143 >> {'loss': 1.2303, 'learning_rate': 4.4837e-05, 'epoch': 1.14, 'throughput': 6097.20}
+[INFO|2025-07-10 15:22:00] logging.py:143 >> {'loss': 1.2028, 'learning_rate': 4.4752e-05, 'epoch': 1.14, 'throughput': 6098.22}
+[INFO|2025-07-10 15:22:18] logging.py:143 >> {'loss': 1.2211, 'learning_rate': 4.4666e-05, 'epoch': 1.15, 'throughput': 6099.47}
+[INFO|2025-07-10 15:22:37] logging.py:143 >> {'loss': 1.2373, 'learning_rate': 4.4580e-05, 'epoch': 1.16, 'throughput': 6100.71}
+[INFO|2025-07-10 15:22:55] logging.py:143 >> {'loss': 1.1977, 'learning_rate': 4.4494e-05, 'epoch': 1.16, 'throughput': 6101.96}
+[INFO|2025-07-10 15:23:12] logging.py:143 >> {'loss': 1.2351, 'learning_rate': 4.4406e-05, 'epoch': 1.17, 'throughput': 6103.23}
+[INFO|2025-07-10 15:23:32] logging.py:143 >> {'loss': 1.1716, 'learning_rate': 4.4319e-05, 'epoch': 1.18, 'throughput': 6104.32}
+[INFO|2025-07-10 15:23:50] logging.py:143 >> {'loss': 1.2482, 'learning_rate': 4.4230e-05, 'epoch': 1.18, 'throughput': 6105.47}
+[INFO|2025-07-10 15:24:09] logging.py:143 >> {'loss': 1.2186, 'learning_rate': 4.4141e-05, 'epoch': 1.19, 'throughput': 6106.64}
+[INFO|2025-07-10 15:24:28] logging.py:143 >> {'loss': 1.2087, 'learning_rate': 4.4052e-05, 'epoch': 1.20, 'throughput': 6107.73}
+[INFO|2025-07-10 15:24:45] logging.py:143 >> {'loss': 1.2761, 'learning_rate': 4.3961e-05, 'epoch': 1.20, 'throughput': 6108.78}
+[INFO|2025-07-10 15:25:02] logging.py:143 >> {'loss': 1.2615, 'learning_rate': 4.3871e-05, 'epoch': 1.21, 'throughput': 6109.96}
+[INFO|2025-07-10 15:25:20] logging.py:143 >> {'loss': 1.2024, 'learning_rate': 4.3779e-05, 'epoch': 1.21, 'throughput': 6110.90}
+[INFO|2025-07-10 15:25:39] logging.py:143 >> {'loss': 1.2074, 'learning_rate': 4.3687e-05, 'epoch': 1.22, 'throughput': 6111.96}
+[INFO|2025-07-10 15:25:58] logging.py:143 >> {'loss': 1.1960, 'learning_rate': 4.3595e-05, 'epoch': 1.23, 'throughput': 6112.95}
+[INFO|2025-07-10 15:26:16] logging.py:143 >> {'loss': 1.1711, 'learning_rate': 4.3502e-05, 'epoch': 1.23, 'throughput': 6114.06}
+[INFO|2025-07-10 15:26:36] logging.py:143 >> {'loss': 1.1734, 'learning_rate': 4.3408e-05, 'epoch': 1.24, 'throughput': 6114.64}
+[INFO|2025-07-10 15:26:54] logging.py:143 >> {'loss': 1.2475, 'learning_rate': 4.3314e-05, 'epoch': 1.25, 'throughput': 6115.64}
+[INFO|2025-07-10 15:27:15] logging.py:143 >> {'loss': 1.1797, 'learning_rate': 4.3219e-05, 'epoch': 1.25, 'throughput': 6116.10}
+[INFO|2025-07-10 15:27:35] logging.py:143 >> {'loss': 1.2313, 'learning_rate': 4.3124e-05, 'epoch': 1.26, 'throughput': 6116.77}
+[INFO|2025-07-10 15:27:53] logging.py:143 >> {'loss': 1.2182, 'learning_rate': 4.3028e-05, 'epoch': 1.27, 'throughput': 6117.32}
+[INFO|2025-07-10 15:28:11] logging.py:143 >> {'loss': 1.2159, 'learning_rate': 4.2931e-05, 'epoch': 1.27, 'throughput': 6118.07}
+[INFO|2025-07-10 15:28:28] logging.py:143 >> {'loss': 1.2400, 'learning_rate': 4.2834e-05, 'epoch': 1.28, 'throughput': 6118.93}
+[INFO|2025-07-10 15:28:28] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 15:28:28] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 15:28:28] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 15:30:00] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1000
+[INFO|2025-07-10 15:30:00] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 15:30:00] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 15:30:00] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1000/chat_template.jinja
+[INFO|2025-07-10 15:30:00] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1000/tokenizer_config.json
+[INFO|2025-07-10 15:30:00] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1000/special_tokens_map.json
+[INFO|2025-07-10 15:30:18] logging.py:143 >> {'loss': 1.2258, 'learning_rate': 4.2736e-05, 'epoch': 1.29, 'throughput': 5973.24}
+[INFO|2025-07-10 15:30:36] logging.py:143 >> {'loss': 1.1949, 'learning_rate': 4.2638e-05, 'epoch': 1.29, 'throughput': 5974.96}
+[INFO|2025-07-10 15:30:55] logging.py:143 >> {'loss': 1.2279, 'learning_rate': 4.2540e-05, 'epoch': 1.30, 'throughput': 5976.57}
+[INFO|2025-07-10 15:31:14] logging.py:143 >> {'loss': 1.1972, 'learning_rate': 4.2440e-05, 'epoch': 1.30, 'throughput': 5978.14}
+[INFO|2025-07-10 15:31:34] logging.py:143 >> {'loss': 1.2041, 'learning_rate': 4.2341e-05, 'epoch': 1.31, 'throughput': 5979.49}
+[INFO|2025-07-10 15:31:53] logging.py:143 >> {'loss': 1.1439, 'learning_rate': 4.2240e-05, 'epoch': 1.32, 'throughput': 5980.74}
+[INFO|2025-07-10 15:32:11] logging.py:143 >> {'loss': 1.2523, 'learning_rate': 4.2140e-05, 'epoch': 1.32, 'throughput': 5982.16}
+[INFO|2025-07-10 15:32:28] logging.py:143 >> {'loss': 1.2314, 'learning_rate': 4.2038e-05, 'epoch': 1.33, 'throughput': 5983.73}
+[INFO|2025-07-10 15:32:48] logging.py:143 >> {'loss': 1.1723, 'learning_rate': 4.1936e-05, 'epoch': 1.34, 'throughput': 5985.15}
+[INFO|2025-07-10 15:33:07] logging.py:143 >> {'loss': 1.1884, 'learning_rate': 4.1834e-05, 'epoch': 1.34, 'throughput': 5986.57}
+[INFO|2025-07-10 15:33:25] logging.py:143 >> {'loss': 1.2487, 'learning_rate': 4.1731e-05, 'epoch': 1.35, 'throughput': 5988.09}
+[INFO|2025-07-10 15:33:43] logging.py:143 >> {'loss': 1.2111, 'learning_rate': 4.1628e-05, 'epoch': 1.36, 'throughput': 5989.59}
+[INFO|2025-07-10 15:34:02] logging.py:143 >> {'loss': 1.2226, 'learning_rate': 4.1524e-05, 'epoch': 1.36, 'throughput': 5990.59}
+[INFO|2025-07-10 15:34:20] logging.py:143 >> {'loss': 1.1599, 'learning_rate': 4.1419e-05, 'epoch': 1.37, 'throughput': 5992.02}
+[INFO|2025-07-10 15:34:38] logging.py:143 >> {'loss': 1.2308, 'learning_rate': 4.1314e-05, 'epoch': 1.37, 'throughput': 5993.29}
+[INFO|2025-07-10 15:34:54] logging.py:143 >> {'loss': 1.2061, 'learning_rate': 4.1209e-05, 'epoch': 1.38, 'throughput': 5994.69}
+[INFO|2025-07-10 15:35:14] logging.py:143 >> {'loss': 1.2091, 'learning_rate': 4.1103e-05, 'epoch': 1.39, 'throughput': 5996.12}
+[INFO|2025-07-10 15:35:32] logging.py:143 >> {'loss': 1.1922, 'learning_rate': 4.0996e-05, 'epoch': 1.39, 'throughput': 5997.44}
+[INFO|2025-07-10 15:35:50] logging.py:143 >> {'loss': 1.2090, 'learning_rate': 4.0889e-05, 'epoch': 1.40, 'throughput': 5998.33}
+[INFO|2025-07-10 15:36:08] logging.py:143 >> {'loss': 1.1954, 'learning_rate': 4.0782e-05, 'epoch': 1.41, 'throughput': 5999.67}
+[INFO|2025-07-10 15:36:26] logging.py:143 >> {'loss': 1.2473, 'learning_rate': 4.0674e-05, 'epoch': 1.41, 'throughput': 6001.01}
+[INFO|2025-07-10 15:36:44] logging.py:143 >> {'loss': 1.2215, 'learning_rate': 4.0566e-05, 'epoch': 1.42, 'throughput': 6001.57}
+[INFO|2025-07-10 15:37:05] logging.py:143 >> {'loss': 1.2184, 'learning_rate': 4.0457e-05, 'epoch': 1.43, 'throughput': 6002.95}
+[INFO|2025-07-10 15:37:22] logging.py:143 >> {'loss': 1.2211, 'learning_rate': 4.0347e-05, 'epoch': 1.43, 'throughput': 6004.14}
+[INFO|2025-07-10 15:37:41] logging.py:143 >> {'loss': 1.2358, 'learning_rate': 4.0237e-05, 'epoch': 1.44, 'throughput': 6004.82}
+[INFO|2025-07-10 15:37:58] logging.py:143 >> {'loss': 1.2191, 'learning_rate': 4.0127e-05, 'epoch': 1.45, 'throughput': 6006.11}
+[INFO|2025-07-10 15:38:15] logging.py:143 >> {'loss': 1.2087, 'learning_rate': 4.0016e-05, 'epoch': 1.45, 'throughput': 6007.48}
+[INFO|2025-07-10 15:38:32] logging.py:143 >> {'loss': 1.2609, 'learning_rate': 3.9905e-05, 'epoch': 1.46, 'throughput': 6008.80}
+[INFO|2025-07-10 15:38:49] logging.py:143 >> {'loss': 1.2263, 'learning_rate': 3.9793e-05, 'epoch': 1.46, 'throughput': 6010.13}
+[INFO|2025-07-10 15:39:07] logging.py:143 >> {'loss': 1.1925, 'learning_rate': 3.9681e-05, 'epoch': 1.47, 'throughput': 6011.49}
+[INFO|2025-07-10 15:39:26] logging.py:143 >> {'loss': 1.2274, 'learning_rate': 3.9569e-05, 'epoch': 1.48, 'throughput': 6012.75}
+[INFO|2025-07-10 15:39:43] logging.py:143 >> {'loss': 1.2291, 'learning_rate': 3.9455e-05, 'epoch': 1.48, 'throughput': 6013.67}
+[INFO|2025-07-10 15:39:59] logging.py:143 >> {'loss': 1.2341, 'learning_rate': 3.9342e-05, 'epoch': 1.49, 'throughput': 6014.98}
+[INFO|2025-07-10 15:40:18] logging.py:143 >> {'loss': 1.1996, 'learning_rate': 3.9228e-05, 'epoch': 1.50, 'throughput': 6016.21}
+[INFO|2025-07-10 15:40:35] logging.py:143 >> {'loss': 1.1869, 'learning_rate': 3.9114e-05, 'epoch': 1.50, 'throughput': 6017.52}
+[INFO|2025-07-10 15:40:53] logging.py:143 >> {'loss': 1.2164, 'learning_rate': 3.8999e-05, 'epoch': 1.51, 'throughput': 6018.30}
+[INFO|2025-07-10 15:41:13] logging.py:143 >> {'loss': 1.2003, 'learning_rate': 3.8883e-05, 'epoch': 1.52, 'throughput': 6019.15}
+[INFO|2025-07-10 15:41:32] logging.py:143 >> {'loss': 1.2207, 'learning_rate': 3.8768e-05, 'epoch': 1.52, 'throughput': 6020.24}
+[INFO|2025-07-10 15:41:50] logging.py:143 >> {'loss': 1.2355, 'learning_rate': 3.8652e-05, 'epoch': 1.53, 'throughput': 6021.41}
+[INFO|2025-07-10 15:42:07] logging.py:143 >> {'loss': 1.2443, 'learning_rate': 3.8535e-05, 'epoch': 1.53, 'throughput': 6022.62}
+[INFO|2025-07-10 15:42:24] logging.py:143 >> {'loss': 1.1790, 'learning_rate': 3.8418e-05, 'epoch': 1.54, 'throughput': 6023.85}
+[INFO|2025-07-10 15:42:42] logging.py:143 >> {'loss': 1.1834, 'learning_rate': 3.8301e-05, 'epoch': 1.55, 'throughput': 6024.97}
+[INFO|2025-07-10 15:43:01] logging.py:143 >> {'loss': 1.1980, 'learning_rate': 3.8183e-05, 'epoch': 1.55, 'throughput': 6025.97}
+[INFO|2025-07-10 15:43:19] logging.py:143 >> {'loss': 1.1933, 'learning_rate': 3.8065e-05, 'epoch': 1.56, 'throughput': 6026.93}
+[INFO|2025-07-10 15:43:37] logging.py:143 >> {'loss': 1.2277, 'learning_rate': 3.7946e-05, 'epoch': 1.57, 'throughput': 6028.07}
+[INFO|2025-07-10 15:43:55] logging.py:143 >> {'loss': 1.2218, 'learning_rate': 3.7827e-05, 'epoch': 1.57, 'throughput': 6029.09}
+[INFO|2025-07-10 15:44:14] logging.py:143 >> {'loss': 1.1976, 'learning_rate': 3.7708e-05, 'epoch': 1.58, 'throughput': 6030.06}
+[INFO|2025-07-10 15:44:32] logging.py:143 >> {'loss': 1.1927, 'learning_rate': 3.7588e-05, 'epoch': 1.59, 'throughput': 6031.09}
+[INFO|2025-07-10 15:44:51] logging.py:143 >> {'loss': 1.1751, 'learning_rate': 3.7468e-05, 'epoch': 1.59, 'throughput': 6032.16}
+[INFO|2025-07-10 15:45:10] logging.py:143 >> {'loss': 1.1625, 'learning_rate': 3.7347e-05, 'epoch': 1.60, 'throughput': 6033.20}
+[INFO|2025-07-10 15:45:28] logging.py:143 >> {'loss': 1.2201, 'learning_rate': 3.7226e-05, 'epoch': 1.60, 'throughput': 6034.13}
+[INFO|2025-07-10 15:45:47] logging.py:143 >> {'loss': 1.2148, 'learning_rate': 3.7105e-05, 'epoch': 1.61, 'throughput': 6034.69}
+[INFO|2025-07-10 15:46:05] logging.py:143 >> {'loss': 1.1873, 'learning_rate': 3.6983e-05, 'epoch': 1.62, 'throughput': 6035.77}
+[INFO|2025-07-10 15:46:21] logging.py:143 >> {'loss': 1.2348, 'learning_rate': 3.6861e-05, 'epoch': 1.62, 'throughput': 6036.88}
+[INFO|2025-07-10 15:46:40] logging.py:143 >> {'loss': 1.1912, 'learning_rate': 3.6739e-05, 'epoch': 1.63, 'throughput': 6037.82}
+[INFO|2025-07-10 15:46:59] logging.py:143 >> {'loss': 1.2181, 'learning_rate': 3.6616e-05, 'epoch': 1.64, 'throughput': 6038.80}
+[INFO|2025-07-10 15:47:17] logging.py:143 >> {'loss': 1.1872, 'learning_rate': 3.6493e-05, 'epoch': 1.64, 'throughput': 6039.89}
+[INFO|2025-07-10 15:47:35] logging.py:143 >> {'loss': 1.1963, 'learning_rate': 3.6370e-05, 'epoch': 1.65, 'throughput': 6040.67}
+[INFO|2025-07-10 15:47:52] logging.py:143 >> {'loss': 1.2058, 'learning_rate': 3.6246e-05, 'epoch': 1.66, 'throughput': 6041.45}
+[INFO|2025-07-10 15:48:13] logging.py:143 >> {'loss': 1.1736, 'learning_rate': 3.6122e-05, 'epoch': 1.66, 'throughput': 6042.20}
+[INFO|2025-07-10 15:48:33] logging.py:143 >> {'loss': 1.1945, 'learning_rate': 3.5997e-05, 'epoch': 1.67, 'throughput': 6042.88}
+[INFO|2025-07-10 15:48:52] logging.py:143 >> {'loss': 1.2003, 'learning_rate': 3.5872e-05, 'epoch': 1.68, 'throughput': 6043.39}
+[INFO|2025-07-10 15:49:11] logging.py:143 >> {'loss': 1.1844, 'learning_rate': 3.5747e-05, 'epoch': 1.68, 'throughput': 6044.14}
+[INFO|2025-07-10 15:49:30] logging.py:143 >> {'loss': 1.2002, 'learning_rate': 3.5621e-05, 'epoch': 1.69, 'throughput': 6044.91}
+[INFO|2025-07-10 15:49:48] logging.py:143 >> {'loss': 1.2265, 'learning_rate': 3.5495e-05, 'epoch': 1.69, 'throughput': 6045.93}
+[INFO|2025-07-10 15:50:05] logging.py:143 >> {'loss': 1.1801, 'learning_rate': 3.5369e-05, 'epoch': 1.70, 'throughput': 6046.74}
+[INFO|2025-07-10 15:50:21] logging.py:143 >> {'loss': 1.2346, 'learning_rate': 3.5243e-05, 'epoch': 1.71, 'throughput': 6047.71}
+[INFO|2025-07-10 15:50:41] logging.py:143 >> {'loss': 1.2041, 'learning_rate': 3.5116e-05, 'epoch': 1.71, 'throughput': 6048.47}
+[INFO|2025-07-10 15:50:59] logging.py:143 >> {'loss': 1.2101, 'learning_rate': 3.4989e-05, 'epoch': 1.72, 'throughput': 6048.97}
+[INFO|2025-07-10 15:51:18] logging.py:143 >> {'loss': 1.1611, 'learning_rate': 3.4861e-05, 'epoch': 1.73, 'throughput': 6049.95}
+[INFO|2025-07-10 15:51:37] logging.py:143 >> {'loss': 1.2082, 'learning_rate': 3.4734e-05, 'epoch': 1.73, 'throughput': 6050.74}
+[INFO|2025-07-10 15:51:56] logging.py:143 >> {'loss': 1.1923, 'learning_rate': 3.4606e-05, 'epoch': 1.74, 'throughput': 6051.68}
+[INFO|2025-07-10 15:52:14] logging.py:143 >> {'loss': 1.1241, 'learning_rate': 3.4477e-05, 'epoch': 1.75, 'throughput': 6052.50}
+[INFO|2025-07-10 15:52:31] logging.py:143 >> {'loss': 1.2039, 'learning_rate': 3.4349e-05, 'epoch': 1.75, 'throughput': 6053.59}
+[INFO|2025-07-10 15:52:49] logging.py:143 >> {'loss': 1.2224, 'learning_rate': 3.4220e-05, 'epoch': 1.76, 'throughput': 6054.56}
+[INFO|2025-07-10 15:53:08] logging.py:143 >> {'loss': 1.2129, 'learning_rate': 3.4090e-05, 'epoch': 1.76, 'throughput': 6055.54}
+[INFO|2025-07-10 15:53:25] logging.py:143 >> {'loss': 1.1645, 'learning_rate': 3.3961e-05, 'epoch': 1.77, 'throughput': 6056.52}
+[INFO|2025-07-10 15:53:44] logging.py:143 >> {'loss': 1.2412, 'learning_rate': 3.3831e-05, 'epoch': 1.78, 'throughput': 6057.27}
+[INFO|2025-07-10 15:54:03] logging.py:143 >> {'loss': 1.1952, 'learning_rate': 3.3701e-05, 'epoch': 1.78, 'throughput': 6058.18}
+[INFO|2025-07-10 15:54:21] logging.py:143 >> {'loss': 1.2410, 'learning_rate': 3.3571e-05, 'epoch': 1.79, 'throughput': 6059.13}
+[INFO|2025-07-10 15:54:39] logging.py:143 >> {'loss': 1.1772, 'learning_rate': 3.3440e-05, 'epoch': 1.80, 'throughput': 6059.91}
+[INFO|2025-07-10 15:54:59] logging.py:143 >> {'loss': 1.1488, 'learning_rate': 3.3309e-05, 'epoch': 1.80, 'throughput': 6060.34}
+[INFO|2025-07-10 15:55:16] logging.py:143 >> {'loss': 1.2102, 'learning_rate': 3.3178e-05, 'epoch': 1.81, 'throughput': 6061.22}
+[INFO|2025-07-10 15:55:35] logging.py:143 >> {'loss': 1.2419, 'learning_rate': 3.3047e-05, 'epoch': 1.82, 'throughput': 6061.91}
+[INFO|2025-07-10 15:55:52] logging.py:143 >> {'loss': 1.2144, 'learning_rate': 3.2915e-05, 'epoch': 1.82, 'throughput': 6062.74}
+[INFO|2025-07-10 15:56:12] logging.py:143 >> {'loss': 1.2097, 'learning_rate': 3.2784e-05, 'epoch': 1.83, 'throughput': 6063.28}
+[INFO|2025-07-10 15:56:30] logging.py:143 >> {'loss': 1.2085, 'learning_rate': 3.2651e-05, 'epoch': 1.84, 'throughput': 6063.93}
+[INFO|2025-07-10 15:56:48] logging.py:143 >> {'loss': 1.2280, 'learning_rate': 3.2519e-05, 'epoch': 1.84, 'throughput': 6064.77}
+[INFO|2025-07-10 15:57:06] logging.py:143 >> {'loss': 1.1670, 'learning_rate': 3.2387e-05, 'epoch': 1.85, 'throughput': 6065.70}
+[INFO|2025-07-10 15:57:24] logging.py:143 >> {'loss': 1.1794, 'learning_rate': 3.2254e-05, 'epoch': 1.85, 'throughput': 6066.40}
+[INFO|2025-07-10 15:57:42] logging.py:143 >> {'loss': 1.2322, 'learning_rate': 3.2121e-05, 'epoch': 1.86, 'throughput': 6066.92}
+[INFO|2025-07-10 15:58:00] logging.py:143 >> {'loss': 1.2231, 'learning_rate': 3.1988e-05, 'epoch': 1.87, 'throughput': 6067.77}
+[INFO|2025-07-10 15:58:18] logging.py:143 >> {'loss': 1.1769, 'learning_rate': 3.1854e-05, 'epoch': 1.87, 'throughput': 6068.56}
+[INFO|2025-07-10 15:58:36] logging.py:143 >> {'loss': 1.1757, 'learning_rate': 3.1720e-05, 'epoch': 1.88, 'throughput': 6069.38}
+[INFO|2025-07-10 15:58:55] logging.py:143 >> {'loss': 1.1994, 'learning_rate': 3.1587e-05, 'epoch': 1.89, 'throughput': 6069.68}
+[INFO|2025-07-10 15:59:13] logging.py:143 >> {'loss': 1.1855, 'learning_rate': 3.1453e-05, 'epoch': 1.89, 'throughput': 6070.57}
+[INFO|2025-07-10 15:59:29] logging.py:143 >> {'loss': 1.1932, 'learning_rate': 3.1318e-05, 'epoch': 1.90, 'throughput': 6071.48}
+[INFO|2025-07-10 15:59:46] logging.py:143 >> {'loss': 1.2701, 'learning_rate': 3.1184e-05, 'epoch': 1.91, 'throughput': 6072.34}
+[INFO|2025-07-10 16:00:04] logging.py:143 >> {'loss': 1.2361, 'learning_rate': 3.1049e-05, 'epoch': 1.91, 'throughput': 6073.18}
+[INFO|2025-07-10 16:00:22] logging.py:143 >> {'loss': 1.1888, 'learning_rate': 3.0914e-05, 'epoch': 1.92, 'throughput': 6074.03}
+[INFO|2025-07-10 16:00:22] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 16:00:22] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 16:00:22] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 16:01:54] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1500
+[INFO|2025-07-10 16:01:54] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 16:01:54] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 16:01:54] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1500/chat_template.jinja
+[INFO|2025-07-10 16:01:54] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1500/tokenizer_config.json
+[INFO|2025-07-10 16:01:54] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-1500/special_tokens_map.json
+[INFO|2025-07-10 16:02:11] logging.py:143 >> {'loss': 1.2146, 'learning_rate': 3.0779e-05, 'epoch': 1.92, 'throughput': 5977.71}
+[INFO|2025-07-10 16:02:29] logging.py:143 >> {'loss': 1.2248, 'learning_rate': 3.0644e-05, 'epoch': 1.93, 'throughput': 5978.55}
+[INFO|2025-07-10 16:02:48] logging.py:143 >> {'loss': 1.1747, 'learning_rate': 3.0509e-05, 'epoch': 1.94, 'throughput': 5979.65}
+[INFO|2025-07-10 16:03:05] logging.py:143 >> {'loss': 1.1997, 'learning_rate': 3.0373e-05, 'epoch': 1.94, 'throughput': 5980.40}
+[INFO|2025-07-10 16:03:22] logging.py:143 >> {'loss': 1.1929, 'learning_rate': 3.0238e-05, 'epoch': 1.95, 'throughput': 5981.47}
+[INFO|2025-07-10 16:03:41] logging.py:143 >> {'loss': 1.1815, 'learning_rate': 3.0102e-05, 'epoch': 1.96, 'throughput': 5982.36}
+[INFO|2025-07-10 16:04:00] logging.py:143 >> {'loss': 1.2111, 'learning_rate': 2.9966e-05, 'epoch': 1.96, 'throughput': 5983.10}
+[INFO|2025-07-10 16:04:17] logging.py:143 >> {'loss': 1.1855, 'learning_rate': 2.9830e-05, 'epoch': 1.97, 'throughput': 5984.14}
+[INFO|2025-07-10 16:04:36] logging.py:143 >> {'loss': 1.2288, 'learning_rate': 2.9693e-05, 'epoch': 1.98, 'throughput': 5985.10}
+[INFO|2025-07-10 16:04:54] logging.py:143 >> {'loss': 1.2015, 'learning_rate': 2.9557e-05, 'epoch': 1.98, 'throughput': 5986.00}
+[INFO|2025-07-10 16:05:12] logging.py:143 >> {'loss': 1.2356, 'learning_rate': 2.9420e-05, 'epoch': 1.99, 'throughput': 5987.02}
+[INFO|2025-07-10 16:05:31] logging.py:143 >> {'loss': 1.1491, 'learning_rate': 2.9283e-05, 'epoch': 2.00, 'throughput': 5987.81}
+[INFO|2025-07-10 16:05:49] logging.py:143 >> {'loss': 1.1877, 'learning_rate': 2.9147e-05, 'epoch': 2.00, 'throughput': 5988.82}
+[INFO|2025-07-10 16:06:07] logging.py:143 >> {'loss': 1.1554, 'learning_rate': 2.9010e-05, 'epoch': 2.01, 'throughput': 5989.75}
+[INFO|2025-07-10 16:06:26] logging.py:143 >> {'loss': 1.1570, 'learning_rate': 2.8872e-05, 'epoch': 2.01, 'throughput': 5990.73}
+[INFO|2025-07-10 16:06:44] logging.py:143 >> {'loss': 1.1987, 'learning_rate': 2.8735e-05, 'epoch': 2.02, 'throughput': 5991.49}
+[INFO|2025-07-10 16:07:03] logging.py:143 >> {'loss': 1.2037, 'learning_rate': 2.8598e-05, 'epoch': 2.03, 'throughput': 5992.34}
+[INFO|2025-07-10 16:07:22] logging.py:143 >> {'loss': 1.2023, 'learning_rate': 2.8460e-05, 'epoch': 2.03, 'throughput': 5993.07}
+[INFO|2025-07-10 16:07:39] logging.py:143 >> {'loss': 1.2238, 'learning_rate': 2.8323e-05, 'epoch': 2.04, 'throughput': 5993.74}
+[INFO|2025-07-10 16:07:57] logging.py:143 >> {'loss': 1.1635, 'learning_rate': 2.8185e-05, 'epoch': 2.05, 'throughput': 5994.65}
+[INFO|2025-07-10 16:08:15] logging.py:143 >> {'loss': 1.2114, 'learning_rate': 2.8047e-05, 'epoch': 2.05, 'throughput': 5995.58}
+[INFO|2025-07-10 16:08:33] logging.py:143 >> {'loss': 1.1743, 'learning_rate': 2.7909e-05, 'epoch': 2.06, 'throughput': 5996.39}
+[INFO|2025-07-10 16:08:52] logging.py:143 >> {'loss': 1.2174, 'learning_rate': 2.7772e-05, 'epoch': 2.07, 'throughput': 5997.24}
+[INFO|2025-07-10 16:09:10] logging.py:143 >> {'loss': 1.1959, 'learning_rate': 2.7633e-05, 'epoch': 2.07, 'throughput': 5997.99}
+[INFO|2025-07-10 16:09:30] logging.py:143 >> {'loss': 1.2197, 'learning_rate': 2.7495e-05, 'epoch': 2.08, 'throughput': 5998.55}
+[INFO|2025-07-10 16:09:48] logging.py:143 >> {'loss': 1.2618, 'learning_rate': 2.7357e-05, 'epoch': 2.08, 'throughput': 5999.38}
+[INFO|2025-07-10 16:10:06] logging.py:143 >> {'loss': 1.1600, 'learning_rate': 2.7219e-05, 'epoch': 2.09, 'throughput': 6000.17}
+[INFO|2025-07-10 16:10:24] logging.py:143 >> {'loss': 1.1898, 'learning_rate': 2.7081e-05, 'epoch': 2.10, 'throughput': 6001.13}
+[INFO|2025-07-10 16:10:41] logging.py:143 >> {'loss': 1.1771, 'learning_rate': 2.6942e-05, 'epoch': 2.10, 'throughput': 6002.10}
+[INFO|2025-07-10 16:11:00] logging.py:143 >> {'loss': 1.2045, 'learning_rate': 2.6804e-05, 'epoch': 2.11, 'throughput': 6003.01}
+[INFO|2025-07-10 16:11:19] logging.py:143 >> {'loss': 1.1680, 'learning_rate': 2.6665e-05, 'epoch': 2.12, 'throughput': 6003.79}
+[INFO|2025-07-10 16:11:38] logging.py:143 >> {'loss': 1.2043, 'learning_rate': 2.6527e-05, 'epoch': 2.12, 'throughput': 6004.67}
+[INFO|2025-07-10 16:11:56] logging.py:143 >> {'loss': 1.1305, 'learning_rate': 2.6388e-05, 'epoch': 2.13, 'throughput': 6005.34}
+[INFO|2025-07-10 16:12:13] logging.py:143 >> {'loss': 1.2010, 'learning_rate': 2.6249e-05, 'epoch': 2.14, 'throughput': 6005.87}
+[INFO|2025-07-10 16:12:33] logging.py:143 >> {'loss': 1.2127, 'learning_rate': 2.6111e-05, 'epoch': 2.14, 'throughput': 6006.79}
+[INFO|2025-07-10 16:12:50] logging.py:143 >> {'loss': 1.1455, 'learning_rate': 2.5972e-05, 'epoch': 2.15, 'throughput': 6007.60}
+[INFO|2025-07-10 16:13:09] logging.py:143 >> {'loss': 1.2129, 'learning_rate': 2.5833e-05, 'epoch': 2.15, 'throughput': 6008.42}
+[INFO|2025-07-10 16:13:26] logging.py:143 >> {'loss': 1.2374, 'learning_rate': 2.5694e-05, 'epoch': 2.16, 'throughput': 6009.12}
+[INFO|2025-07-10 16:13:45] logging.py:143 >> {'loss': 1.2026, 'learning_rate': 2.5555e-05, 'epoch': 2.17, 'throughput': 6009.77}
+[INFO|2025-07-10 16:14:04] logging.py:143 >> {'loss': 1.2037, 'learning_rate': 2.5417e-05, 'epoch': 2.17, 'throughput': 6010.33}
+[INFO|2025-07-10 16:14:23] logging.py:143 >> {'loss': 1.2528, 'learning_rate': 2.5278e-05, 'epoch': 2.18, 'throughput': 6010.97}
+[INFO|2025-07-10 16:14:41] logging.py:143 >> {'loss': 1.2321, 'learning_rate': 2.5139e-05, 'epoch': 2.19, 'throughput': 6011.83}
+[INFO|2025-07-10 16:15:00] logging.py:143 >> {'loss': 1.1752, 'learning_rate': 2.5000e-05, 'epoch': 2.19, 'throughput': 6012.58}
+[INFO|2025-07-10 16:15:17] logging.py:143 >> {'loss': 1.1879, 'learning_rate': 2.4861e-05, 'epoch': 2.20, 'throughput': 6013.50}
+[INFO|2025-07-10 16:15:35] logging.py:143 >> {'loss': 1.2069, 'learning_rate': 2.4722e-05, 'epoch': 2.21, 'throughput': 6014.29}
+[INFO|2025-07-10 16:15:54] logging.py:143 >> {'loss': 1.2028, 'learning_rate': 2.4583e-05, 'epoch': 2.21, 'throughput': 6014.85}
+[INFO|2025-07-10 16:16:10] logging.py:143 >> {'loss': 1.2034, 'learning_rate': 2.4445e-05, 'epoch': 2.22, 'throughput': 6015.76}
+[INFO|2025-07-10 16:16:30] logging.py:143 >> {'loss': 1.2577, 'learning_rate': 2.4306e-05, 'epoch': 2.23, 'throughput': 6016.55}
+[INFO|2025-07-10 16:16:48] logging.py:143 >> {'loss': 1.1875, 'learning_rate': 2.4167e-05, 'epoch': 2.23, 'throughput': 6017.33}
+[INFO|2025-07-10 16:17:04] logging.py:143 >> {'loss': 1.2163, 'learning_rate': 2.4028e-05, 'epoch': 2.24, 'throughput': 6018.18}
+[INFO|2025-07-10 16:17:22] logging.py:143 >> {'loss': 1.2276, 'learning_rate': 2.3889e-05, 'epoch': 2.24, 'throughput': 6018.99}
+[INFO|2025-07-10 16:17:39] logging.py:143 >> {'loss': 1.2047, 'learning_rate': 2.3751e-05, 'epoch': 2.25, 'throughput': 6019.85}
+[INFO|2025-07-10 16:17:58] logging.py:143 >> {'loss': 1.1547, 'learning_rate': 2.3612e-05, 'epoch': 2.26, 'throughput': 6020.67}
+[INFO|2025-07-10 16:18:16] logging.py:143 >> {'loss': 1.1898, 'learning_rate': 2.3473e-05, 'epoch': 2.26, 'throughput': 6021.47}
+[INFO|2025-07-10 16:18:33] logging.py:143 >> {'loss': 1.2067, 'learning_rate': 2.3335e-05, 'epoch': 2.27, 'throughput': 6022.33}
+[INFO|2025-07-10 16:18:51] logging.py:143 >> {'loss': 1.2257, 'learning_rate': 2.3196e-05, 'epoch': 2.28, 'throughput': 6023.16}
+[INFO|2025-07-10 16:19:09] logging.py:143 >> {'loss': 1.1715, 'learning_rate': 2.3058e-05, 'epoch': 2.28, 'throughput': 6024.00}
+[INFO|2025-07-10 16:19:27] logging.py:143 >> {'loss': 1.2227, 'learning_rate': 2.2919e-05, 'epoch': 2.29, 'throughput': 6024.79}
+[INFO|2025-07-10 16:19:45] logging.py:143 >> {'loss': 1.2517, 'learning_rate': 2.2781e-05, 'epoch': 2.30, 'throughput': 6025.62}
+[INFO|2025-07-10 16:20:04] logging.py:143 >> {'loss': 1.1834, 'learning_rate': 2.2643e-05, 'epoch': 2.30, 'throughput': 6026.08}
+[INFO|2025-07-10 16:20:20] logging.py:143 >> {'loss': 1.1895, 'learning_rate': 2.2505e-05, 'epoch': 2.31, 'throughput': 6026.90}
+[INFO|2025-07-10 16:20:37] logging.py:143 >> {'loss': 1.1892, 'learning_rate': 2.2367e-05, 'epoch': 2.31, 'throughput': 6027.66}
+[INFO|2025-07-10 16:20:55] logging.py:143 >> {'loss': 1.1953, 'learning_rate': 2.2228e-05, 'epoch': 2.32, 'throughput': 6028.34}
+[INFO|2025-07-10 16:21:14] logging.py:143 >> {'loss': 1.1494, 'learning_rate': 2.2091e-05, 'epoch': 2.33, 'throughput': 6029.04}
+[INFO|2025-07-10 16:21:30] logging.py:143 >> {'loss': 1.1800, 'learning_rate': 2.1953e-05, 'epoch': 2.33, 'throughput': 6029.84}
+[INFO|2025-07-10 16:21:47] logging.py:143 >> {'loss': 1.1765, 'learning_rate': 2.1815e-05, 'epoch': 2.34, 'throughput': 6030.51}
+[INFO|2025-07-10 16:22:07] logging.py:143 >> {'loss': 1.2237, 'learning_rate': 2.1677e-05, 'epoch': 2.35, 'throughput': 6031.15}
+[INFO|2025-07-10 16:22:25] logging.py:143 >> {'loss': 1.1727, 'learning_rate': 2.1540e-05, 'epoch': 2.35, 'throughput': 6031.81}
+[INFO|2025-07-10 16:22:41] logging.py:143 >> {'loss': 1.2247, 'learning_rate': 2.1402e-05, 'epoch': 2.36, 'throughput': 6032.60}
+[INFO|2025-07-10 16:23:00] logging.py:143 >> {'loss': 1.1622, 'learning_rate': 2.1265e-05, 'epoch': 2.37, 'throughput': 6033.28}
+[INFO|2025-07-10 16:23:18] logging.py:143 >> {'loss': 1.1970, 'learning_rate': 2.1128e-05, 'epoch': 2.37, 'throughput': 6034.08}
+[INFO|2025-07-10 16:23:36] logging.py:143 >> {'loss': 1.2379, 'learning_rate': 2.0990e-05, 'epoch': 2.38, 'throughput': 6034.83}
+[INFO|2025-07-10 16:23:53] logging.py:143 >> {'loss': 1.1920, 'learning_rate': 2.0853e-05, 'epoch': 2.38, 'throughput': 6035.43}
+[INFO|2025-07-10 16:24:11] logging.py:143 >> {'loss': 1.2037, 'learning_rate': 2.0717e-05, 'epoch': 2.39, 'throughput': 6036.20}
+[INFO|2025-07-10 16:24:30] logging.py:143 >> {'loss': 1.2234, 'learning_rate': 2.0580e-05, 'epoch': 2.40, 'throughput': 6036.97}
+[INFO|2025-07-10 16:24:47] logging.py:143 >> {'loss': 1.1793, 'learning_rate': 2.0443e-05, 'epoch': 2.40, 'throughput': 6037.68}
+[INFO|2025-07-10 16:25:05] logging.py:143 >> {'loss': 1.2147, 'learning_rate': 2.0307e-05, 'epoch': 2.41, 'throughput': 6038.48}
+[INFO|2025-07-10 16:25:24] logging.py:143 >> {'loss': 1.2123, 'learning_rate': 2.0170e-05, 'epoch': 2.42, 'throughput': 6039.12}
+[INFO|2025-07-10 16:25:43] logging.py:143 >> {'loss': 1.1740, 'learning_rate': 2.0034e-05, 'epoch': 2.42, 'throughput': 6039.84}
+[INFO|2025-07-10 16:26:01] logging.py:143 >> {'loss': 1.1247, 'learning_rate': 1.9898e-05, 'epoch': 2.43, 'throughput': 6040.45}
+[INFO|2025-07-10 16:26:22] logging.py:143 >> {'loss': 1.1932, 'learning_rate': 1.9762e-05, 'epoch': 2.44, 'throughput': 6041.01}
+[INFO|2025-07-10 16:26:40] logging.py:143 >> {'loss': 1.1984, 'learning_rate': 1.9627e-05, 'epoch': 2.44, 'throughput': 6041.67}
+[INFO|2025-07-10 16:26:58] logging.py:143 >> {'loss': 1.1835, 'learning_rate': 1.9491e-05, 'epoch': 2.45, 'throughput': 6042.36}
+[INFO|2025-07-10 16:27:16] logging.py:143 >> {'loss': 1.2098, 'learning_rate': 1.9356e-05, 'epoch': 2.46, 'throughput': 6043.10}
+[INFO|2025-07-10 16:27:33] logging.py:143 >> {'loss': 1.2291, 'learning_rate': 1.9221e-05, 'epoch': 2.46, 'throughput': 6043.87}
+[INFO|2025-07-10 16:27:53] logging.py:143 >> {'loss': 1.2130, 'learning_rate': 1.9086e-05, 'epoch': 2.47, 'throughput': 6044.40}
+[INFO|2025-07-10 16:28:11] logging.py:143 >> {'loss': 1.2082, 'learning_rate': 1.8951e-05, 'epoch': 2.47, 'throughput': 6045.03}
+[INFO|2025-07-10 16:28:32] logging.py:143 >> {'loss': 1.1419, 'learning_rate': 1.8816e-05, 'epoch': 2.48, 'throughput': 6045.59}
+[INFO|2025-07-10 16:28:50] logging.py:143 >> {'loss': 1.1712, 'learning_rate': 1.8682e-05, 'epoch': 2.49, 'throughput': 6046.26}
+[INFO|2025-07-10 16:29:09] logging.py:143 >> {'loss': 1.1722, 'learning_rate': 1.8547e-05, 'epoch': 2.49, 'throughput': 6046.88}
+[INFO|2025-07-10 16:29:26] logging.py:143 >> {'loss': 1.2236, 'learning_rate': 1.8413e-05, 'epoch': 2.50, 'throughput': 6047.62}
+[INFO|2025-07-10 16:29:44] logging.py:143 >> {'loss': 1.1808, 'learning_rate': 1.8280e-05, 'epoch': 2.51, 'throughput': 6048.29}
+[INFO|2025-07-10 16:30:01] logging.py:143 >> {'loss': 1.2392, 'learning_rate': 1.8146e-05, 'epoch': 2.51, 'throughput': 6048.82}
+[INFO|2025-07-10 16:30:19] logging.py:143 >> {'loss': 1.1989, 'learning_rate': 1.8012e-05, 'epoch': 2.52, 'throughput': 6049.42}
+[INFO|2025-07-10 16:30:36] logging.py:143 >> {'loss': 1.1928, 'learning_rate': 1.7879e-05, 'epoch': 2.53, 'throughput': 6050.14}
+[INFO|2025-07-10 16:30:54] logging.py:143 >> {'loss': 1.2170, 'learning_rate': 1.7746e-05, 'epoch': 2.53, 'throughput': 6050.81}
+[INFO|2025-07-10 16:31:11] logging.py:143 >> {'loss': 1.1731, 'learning_rate': 1.7613e-05, 'epoch': 2.54, 'throughput': 6051.39}
+[INFO|2025-07-10 16:31:29] logging.py:143 >> {'loss': 1.1620, 'learning_rate': 1.7481e-05, 'epoch': 2.54, 'throughput': 6051.96}
+[INFO|2025-07-10 16:31:48] logging.py:143 >> {'loss': 1.1664, 'learning_rate': 1.7349e-05, 'epoch': 2.55, 'throughput': 6052.51}
+[INFO|2025-07-10 16:32:04] logging.py:143 >> {'loss': 1.1911, 'learning_rate': 1.7216e-05, 'epoch': 2.56, 'throughput': 6053.17}
+[INFO|2025-07-10 16:32:04] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 16:32:04] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 16:32:04] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 16:33:36] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2000
+[INFO|2025-07-10 16:33:36] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 16:33:36] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 16:33:36] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2000/chat_template.jinja
+[INFO|2025-07-10 16:33:36] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2000/tokenizer_config.json
+[INFO|2025-07-10 16:33:36] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2000/special_tokens_map.json
+[INFO|2025-07-10 16:33:54] logging.py:143 >> {'loss': 1.1739, 'learning_rate': 1.7085e-05, 'epoch': 2.56, 'throughput': 5981.03}
+[INFO|2025-07-10 16:34:13] logging.py:143 >> {'loss': 1.1661, 'learning_rate': 1.6953e-05, 'epoch': 2.57, 'throughput': 5981.83}
+[INFO|2025-07-10 16:34:30] logging.py:143 >> {'loss': 1.2161, 'learning_rate': 1.6822e-05, 'epoch': 2.58, 'throughput': 5982.65}
+[INFO|2025-07-10 16:34:47] logging.py:143 >> {'loss': 1.1904, 'learning_rate': 1.6691e-05, 'epoch': 2.58, 'throughput': 5983.47}
+[INFO|2025-07-10 16:35:07] logging.py:143 >> {'loss': 1.1596, 'learning_rate': 1.6560e-05, 'epoch': 2.59, 'throughput': 5984.25}
+[INFO|2025-07-10 16:35:26] logging.py:143 >> {'loss': 1.1631, 'learning_rate': 1.6429e-05, 'epoch': 2.60, 'throughput': 5984.99}
+[INFO|2025-07-10 16:35:44] logging.py:143 >> {'loss': 1.2177, 'learning_rate': 1.6299e-05, 'epoch': 2.60, 'throughput': 5985.85}
+[INFO|2025-07-10 16:36:02] logging.py:143 >> {'loss': 1.2335, 'learning_rate': 1.6169e-05, 'epoch': 2.61, 'throughput': 5986.65}
+[INFO|2025-07-10 16:36:19] logging.py:143 >> {'loss': 1.2301, 'learning_rate': 1.6039e-05, 'epoch': 2.62, 'throughput': 5987.47}
+[INFO|2025-07-10 16:36:37] logging.py:143 >> {'loss': 1.2024, 'learning_rate': 1.5910e-05, 'epoch': 2.62, 'throughput': 5988.30}
+[INFO|2025-07-10 16:36:55] logging.py:143 >> {'loss': 1.2164, 'learning_rate': 1.5780e-05, 'epoch': 2.63, 'throughput': 5989.12}
+[INFO|2025-07-10 16:37:13] logging.py:143 >> {'loss': 1.1718, 'learning_rate': 1.5651e-05, 'epoch': 2.63, 'throughput': 5989.96}
+[INFO|2025-07-10 16:37:31] logging.py:143 >> {'loss': 1.1916, 'learning_rate': 1.5523e-05, 'epoch': 2.64, 'throughput': 5990.78}
+[INFO|2025-07-10 16:37:48] logging.py:143 >> {'loss': 1.2105, 'learning_rate': 1.5394e-05, 'epoch': 2.65, 'throughput': 5991.57}
+[INFO|2025-07-10 16:38:07] logging.py:143 >> {'loss': 1.2011, 'learning_rate': 1.5266e-05, 'epoch': 2.65, 'throughput': 5992.35}
+[INFO|2025-07-10 16:38:26] logging.py:143 >> {'loss': 1.1943, 'learning_rate': 1.5139e-05, 'epoch': 2.66, 'throughput': 5993.10}
+[INFO|2025-07-10 16:38:44] logging.py:143 >> {'loss': 1.2161, 'learning_rate': 1.5011e-05, 'epoch': 2.67, 'throughput': 5993.84}
+[INFO|2025-07-10 16:39:02] logging.py:143 >> {'loss': 1.1960, 'learning_rate': 1.4884e-05, 'epoch': 2.67, 'throughput': 5994.60}
+[INFO|2025-07-10 16:39:20] logging.py:143 >> {'loss': 1.2091, 'learning_rate': 1.4757e-05, 'epoch': 2.68, 'throughput': 5995.38}
+[INFO|2025-07-10 16:39:39] logging.py:143 >> {'loss': 1.1748, 'learning_rate': 1.4631e-05, 'epoch': 2.69, 'throughput': 5996.12}
+[INFO|2025-07-10 16:39:58] logging.py:143 >> {'loss': 1.2045, 'learning_rate': 1.4505e-05, 'epoch': 2.69, 'throughput': 5996.74}
+[INFO|2025-07-10 16:40:17] logging.py:143 >> {'loss': 1.2001, 'learning_rate': 1.4379e-05, 'epoch': 2.70, 'throughput': 5997.38}
+[INFO|2025-07-10 16:40:35] logging.py:143 >> {'loss': 1.2254, 'learning_rate': 1.4253e-05, 'epoch': 2.70, 'throughput': 5998.13}
+[INFO|2025-07-10 16:40:52] logging.py:143 >> {'loss': 1.1862, 'learning_rate': 1.4128e-05, 'epoch': 2.71, 'throughput': 5998.88}
+[INFO|2025-07-10 16:41:09] logging.py:143 >> {'loss': 1.2297, 'learning_rate': 1.4003e-05, 'epoch': 2.72, 'throughput': 5999.65}
+[INFO|2025-07-10 16:41:28] logging.py:143 >> {'loss': 1.1592, 'learning_rate': 1.3878e-05, 'epoch': 2.72, 'throughput': 6000.31}
+[INFO|2025-07-10 16:41:46] logging.py:143 >> {'loss': 1.2320, 'learning_rate': 1.3754e-05, 'epoch': 2.73, 'throughput': 6001.06}
+[INFO|2025-07-10 16:42:04] logging.py:143 >> {'loss': 1.2319, 'learning_rate': 1.3630e-05, 'epoch': 2.74, 'throughput': 6001.83}
+[INFO|2025-07-10 16:42:21] logging.py:143 >> {'loss': 1.2021, 'learning_rate': 1.3507e-05, 'epoch': 2.74, 'throughput': 6002.52}
+[INFO|2025-07-10 16:42:41] logging.py:143 >> {'loss': 1.1915, 'learning_rate': 1.3384e-05, 'epoch': 2.75, 'throughput': 6003.05}
+[INFO|2025-07-10 16:42:59] logging.py:143 >> {'loss': 1.1959, 'learning_rate': 1.3261e-05, 'epoch': 2.76, 'throughput': 6003.77}
+[INFO|2025-07-10 16:43:17] logging.py:143 >> {'loss': 1.1651, 'learning_rate': 1.3139e-05, 'epoch': 2.76, 'throughput': 6004.38}
+[INFO|2025-07-10 16:43:34] logging.py:143 >> {'loss': 1.1873, 'learning_rate': 1.3017e-05, 'epoch': 2.77, 'throughput': 6005.07}
+[INFO|2025-07-10 16:43:52] logging.py:143 >> {'loss': 1.1478, 'learning_rate': 1.2895e-05, 'epoch': 2.78, 'throughput': 6005.77}
+[INFO|2025-07-10 16:44:11] logging.py:143 >> {'loss': 1.2213, 'learning_rate': 1.2774e-05, 'epoch': 2.78, 'throughput': 6006.47}
+[INFO|2025-07-10 16:44:30] logging.py:143 >> {'loss': 1.2224, 'learning_rate': 1.2653e-05, 'epoch': 2.79, 'throughput': 6007.14}
+[INFO|2025-07-10 16:44:49] logging.py:143 >> {'loss': 1.2104, 'learning_rate': 1.2532e-05, 'epoch': 2.79, 'throughput': 6007.78}
+[INFO|2025-07-10 16:45:08] logging.py:143 >> {'loss': 1.1727, 'learning_rate': 1.2412e-05, 'epoch': 2.80, 'throughput': 6008.42}
+[INFO|2025-07-10 16:45:24] logging.py:143 >> {'loss': 1.1695, 'learning_rate': 1.2292e-05, 'epoch': 2.81, 'throughput': 6009.09}
+[INFO|2025-07-10 16:45:41] logging.py:143 >> {'loss': 1.2090, 'learning_rate': 1.2173e-05, 'epoch': 2.81, 'throughput': 6009.79}
+[INFO|2025-07-10 16:46:01] logging.py:143 >> {'loss': 1.1889, 'learning_rate': 1.2054e-05, 'epoch': 2.82, 'throughput': 6010.25}
+[INFO|2025-07-10 16:46:19] logging.py:143 >> {'loss': 1.1963, 'learning_rate': 1.1935e-05, 'epoch': 2.83, 'throughput': 6010.94}
+[INFO|2025-07-10 16:46:36] logging.py:143 >> {'loss': 1.1839, 'learning_rate': 1.1817e-05, 'epoch': 2.83, 'throughput': 6011.56}
+[INFO|2025-07-10 16:46:55] logging.py:143 >> {'loss': 1.1761, 'learning_rate': 1.1699e-05, 'epoch': 2.84, 'throughput': 6011.98}
+[INFO|2025-07-10 16:47:12] logging.py:143 >> {'loss': 1.2202, 'learning_rate': 1.1582e-05, 'epoch': 2.85, 'throughput': 6012.67}
+[INFO|2025-07-10 16:47:32] logging.py:143 >> {'loss': 1.1727, 'learning_rate': 1.1465e-05, 'epoch': 2.85, 'throughput': 6013.37}
+[INFO|2025-07-10 16:47:49] logging.py:143 >> {'loss': 1.1662, 'learning_rate': 1.1348e-05, 'epoch': 2.86, 'throughput': 6013.97}
+[INFO|2025-07-10 16:48:08] logging.py:143 >> {'loss': 1.1774, 'learning_rate': 1.1232e-05, 'epoch': 2.86, 'throughput': 6014.60}
+[INFO|2025-07-10 16:48:26] logging.py:143 >> {'loss': 1.1575, 'learning_rate': 1.1117e-05, 'epoch': 2.87, 'throughput': 6015.26}
+[INFO|2025-07-10 16:48:45] logging.py:143 >> {'loss': 1.2061, 'learning_rate': 1.1001e-05, 'epoch': 2.88, 'throughput': 6015.83}
+[INFO|2025-07-10 16:49:02] logging.py:143 >> {'loss': 1.1650, 'learning_rate': 1.0886e-05, 'epoch': 2.88, 'throughput': 6016.51}
+[INFO|2025-07-10 16:49:21] logging.py:143 >> {'loss': 1.1575, 'learning_rate': 1.0772e-05, 'epoch': 2.89, 'throughput': 6016.95}
+[INFO|2025-07-10 16:49:39] logging.py:143 >> {'loss': 1.1812, 'learning_rate': 1.0658e-05, 'epoch': 2.90, 'throughput': 6017.53}
+[INFO|2025-07-10 16:49:56] logging.py:143 >> {'loss': 1.1722, 'learning_rate': 1.0545e-05, 'epoch': 2.90, 'throughput': 6018.04}
+[INFO|2025-07-10 16:50:14] logging.py:143 >> {'loss': 1.2359, 'learning_rate': 1.0431e-05, 'epoch': 2.91, 'throughput': 6018.49}
+[INFO|2025-07-10 16:50:33] logging.py:143 >> {'loss': 1.1866, 'learning_rate': 1.0319e-05, 'epoch': 2.92, 'throughput': 6018.81}
+[INFO|2025-07-10 16:50:53] logging.py:143 >> {'loss': 1.1793, 'learning_rate': 1.0207e-05, 'epoch': 2.92, 'throughput': 6019.21}
+[INFO|2025-07-10 16:51:10] logging.py:143 >> {'loss': 1.1952, 'learning_rate': 1.0095e-05, 'epoch': 2.93, 'throughput': 6019.77}
+[INFO|2025-07-10 16:51:29] logging.py:143 >> {'loss': 1.1362, 'learning_rate': 9.9837e-06, 'epoch': 2.93, 'throughput': 6020.35}
+[INFO|2025-07-10 16:51:47] logging.py:143 >> {'loss': 1.1141, 'learning_rate': 9.8729e-06, 'epoch': 2.94, 'throughput': 6020.91}
+[INFO|2025-07-10 16:52:05] logging.py:143 >> {'loss': 1.2099, 'learning_rate': 9.7626e-06, 'epoch': 2.95, 'throughput': 6021.52}
+[INFO|2025-07-10 16:52:26] logging.py:143 >> {'loss': 1.1562, 'learning_rate': 9.6528e-06, 'epoch': 2.95, 'throughput': 6021.98}
+[INFO|2025-07-10 16:52:44] logging.py:143 >> {'loss': 1.2291, 'learning_rate': 9.5434e-06, 'epoch': 2.96, 'throughput': 6022.60}
+[INFO|2025-07-10 16:53:02] logging.py:143 >> {'loss': 1.2128, 'learning_rate': 9.4345e-06, 'epoch': 2.97, 'throughput': 6023.20}
+[INFO|2025-07-10 16:53:20] logging.py:143 >> {'loss': 1.2372, 'learning_rate': 9.3261e-06, 'epoch': 2.97, 'throughput': 6023.74}
+[INFO|2025-07-10 16:53:37] logging.py:143 >> {'loss': 1.2005, 'learning_rate': 9.2181e-06, 'epoch': 2.98, 'throughput': 6024.37}
+[INFO|2025-07-10 16:53:57] logging.py:143 >> {'loss': 1.1841, 'learning_rate': 9.1107e-06, 'epoch': 2.99, 'throughput': 6024.95}
+[INFO|2025-07-10 16:54:14] logging.py:143 >> {'loss': 1.1969, 'learning_rate': 9.0037e-06, 'epoch': 2.99, 'throughput': 6025.59}
+[INFO|2025-07-10 16:54:32] logging.py:143 >> {'loss': 1.2195, 'learning_rate': 8.8972e-06, 'epoch': 3.00, 'throughput': 6026.21}
+[INFO|2025-07-10 16:54:50] logging.py:143 >> {'loss': 1.1782, 'learning_rate': 8.7913e-06, 'epoch': 3.01, 'throughput': 6026.81}
+[INFO|2025-07-10 16:55:07] logging.py:143 >> {'loss': 1.1857, 'learning_rate': 8.6858e-06, 'epoch': 3.01, 'throughput': 6027.41}
+[INFO|2025-07-10 16:55:26] logging.py:143 >> {'loss': 1.1936, 'learning_rate': 8.5808e-06, 'epoch': 3.02, 'throughput': 6027.82}
+[INFO|2025-07-10 16:55:43] logging.py:143 >> {'loss': 1.2243, 'learning_rate': 8.4764e-06, 'epoch': 3.02, 'throughput': 6028.38}
+[INFO|2025-07-10 16:56:02] logging.py:143 >> {'loss': 1.1427, 'learning_rate': 8.3724e-06, 'epoch': 3.03, 'throughput': 6028.80}
+[INFO|2025-07-10 16:56:20] logging.py:143 >> {'loss': 1.2464, 'learning_rate': 8.2690e-06, 'epoch': 3.04, 'throughput': 6029.33}
+[INFO|2025-07-10 16:56:40] logging.py:143 >> {'loss': 1.1857, 'learning_rate': 8.1661e-06, 'epoch': 3.04, 'throughput': 6029.85}
+[INFO|2025-07-10 16:56:59] logging.py:143 >> {'loss': 1.1795, 'learning_rate': 8.0637e-06, 'epoch': 3.05, 'throughput': 6030.35}
+[INFO|2025-07-10 16:57:17] logging.py:143 >> {'loss': 1.2250, 'learning_rate': 7.9618e-06, 'epoch': 3.06, 'throughput': 6030.94}
+[INFO|2025-07-10 16:57:36] logging.py:143 >> {'loss': 1.2274, 'learning_rate': 7.8604e-06, 'epoch': 3.06, 'throughput': 6031.43}
+[INFO|2025-07-10 16:57:54] logging.py:143 >> {'loss': 1.1880, 'learning_rate': 7.7596e-06, 'epoch': 3.07, 'throughput': 6032.02}
+[INFO|2025-07-10 16:58:12] logging.py:143 >> {'loss': 1.2144, 'learning_rate': 7.6593e-06, 'epoch': 3.08, 'throughput': 6032.59}
+[INFO|2025-07-10 16:58:30] logging.py:143 >> {'loss': 1.1642, 'learning_rate': 7.5595e-06, 'epoch': 3.08, 'throughput': 6033.21}
+[INFO|2025-07-10 16:58:48] logging.py:143 >> {'loss': 1.2152, 'learning_rate': 7.4603e-06, 'epoch': 3.09, 'throughput': 6033.79}
+[INFO|2025-07-10 16:59:07] logging.py:143 >> {'loss': 1.1761, 'learning_rate': 7.3616e-06, 'epoch': 3.09, 'throughput': 6034.33}
+[INFO|2025-07-10 16:59:27] logging.py:143 >> {'loss': 1.1793, 'learning_rate': 7.2635e-06, 'epoch': 3.10, 'throughput': 6034.61}
+[INFO|2025-07-10 16:59:46] logging.py:143 >> {'loss': 1.1430, 'learning_rate': 7.1659e-06, 'epoch': 3.11, 'throughput': 6035.16}
+[INFO|2025-07-10 17:00:03] logging.py:143 >> {'loss': 1.2072, 'learning_rate': 7.0689e-06, 'epoch': 3.11, 'throughput': 6035.61}
+[INFO|2025-07-10 17:00:20] logging.py:143 >> {'loss': 1.2310, 'learning_rate': 6.9724e-06, 'epoch': 3.12, 'throughput': 6035.94}
+[INFO|2025-07-10 17:00:38] logging.py:143 >> {'loss': 1.1786, 'learning_rate': 6.8765e-06, 'epoch': 3.13, 'throughput': 6036.47}
+[INFO|2025-07-10 17:00:56] logging.py:143 >> {'loss': 1.2305, 'learning_rate': 6.7811e-06, 'epoch': 3.13, 'throughput': 6037.04}
+[INFO|2025-07-10 17:01:15] logging.py:143 >> {'loss': 1.1812, 'learning_rate': 6.6863e-06, 'epoch': 3.14, 'throughput': 6037.53}
+[INFO|2025-07-10 17:01:33] logging.py:143 >> {'loss': 1.1919, 'learning_rate': 6.5921e-06, 'epoch': 3.15, 'throughput': 6037.93}
+[INFO|2025-07-10 17:01:53] logging.py:143 >> {'loss': 1.1769, 'learning_rate': 6.4984e-06, 'epoch': 3.15, 'throughput': 6038.34}
+[INFO|2025-07-10 17:02:11] logging.py:143 >> {'loss': 1.1811, 'learning_rate': 6.4053e-06, 'epoch': 3.16, 'throughput': 6038.82}
+[INFO|2025-07-10 17:02:29] logging.py:143 >> {'loss': 1.2228, 'learning_rate': 6.3128e-06, 'epoch': 3.16, 'throughput': 6039.32}
+[INFO|2025-07-10 17:02:49] logging.py:143 >> {'loss': 1.1404, 'learning_rate': 6.2208e-06, 'epoch': 3.17, 'throughput': 6039.78}
+[INFO|2025-07-10 17:03:07] logging.py:143 >> {'loss': 1.2250, 'learning_rate': 6.1294e-06, 'epoch': 3.18, 'throughput': 6040.21}
+[INFO|2025-07-10 17:03:25] logging.py:143 >> {'loss': 1.1731, 'learning_rate': 6.0386e-06, 'epoch': 3.18, 'throughput': 6040.49}
+[INFO|2025-07-10 17:03:45] logging.py:143 >> {'loss': 1.1809, 'learning_rate': 5.9484e-06, 'epoch': 3.19, 'throughput': 6040.87}
+[INFO|2025-07-10 17:04:03] logging.py:143 >> {'loss': 1.1636, 'learning_rate': 5.8588e-06, 'epoch': 3.20, 'throughput': 6041.21}
+[INFO|2025-07-10 17:04:03] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 17:04:03] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 17:04:03] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 17:05:35] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2500
+[INFO|2025-07-10 17:05:35] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 17:05:35] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 17:05:35] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2500/chat_template.jinja
+[INFO|2025-07-10 17:05:35] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2500/tokenizer_config.json
+[INFO|2025-07-10 17:05:35] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-2500/special_tokens_map.json
+[INFO|2025-07-10 17:05:51] logging.py:143 >> {'loss': 1.2218, 'learning_rate': 5.7698e-06, 'epoch': 3.20, 'throughput': 5983.36}
+[INFO|2025-07-10 17:06:09] logging.py:143 >> {'loss': 1.2167, 'learning_rate': 5.6813e-06, 'epoch': 3.21, 'throughput': 5983.90}
+[INFO|2025-07-10 17:06:27] logging.py:143 >> {'loss': 1.1601, 'learning_rate': 5.5935e-06, 'epoch': 3.22, 'throughput': 5984.53}
+[INFO|2025-07-10 17:06:45] logging.py:143 >> {'loss': 1.1472, 'learning_rate': 5.5063e-06, 'epoch': 3.22, 'throughput': 5984.98}
+[INFO|2025-07-10 17:07:03] logging.py:143 >> {'loss': 1.2027, 'learning_rate': 5.4196e-06, 'epoch': 3.23, 'throughput': 5985.37}
+[INFO|2025-07-10 17:07:19] logging.py:143 >> {'loss': 1.2109, 'learning_rate': 5.3336e-06, 'epoch': 3.24, 'throughput': 5986.02}
+[INFO|2025-07-10 17:07:38] logging.py:143 >> {'loss': 1.1873, 'learning_rate': 5.2482e-06, 'epoch': 3.24, 'throughput': 5986.51}
+[INFO|2025-07-10 17:07:58] logging.py:143 >> {'loss': 1.2004, 'learning_rate': 5.1633e-06, 'epoch': 3.25, 'throughput': 5986.85}
+[INFO|2025-07-10 17:08:15] logging.py:143 >> {'loss': 1.1790, 'learning_rate': 5.0791e-06, 'epoch': 3.25, 'throughput': 5987.18}
+[INFO|2025-07-10 17:08:33] logging.py:143 >> {'loss': 1.1383, 'learning_rate': 4.9956e-06, 'epoch': 3.26, 'throughput': 5987.57}
+[INFO|2025-07-10 17:08:53] logging.py:143 >> {'loss': 1.1854, 'learning_rate': 4.9126e-06, 'epoch': 3.27, 'throughput': 5988.00}
+[INFO|2025-07-10 17:09:10] logging.py:143 >> {'loss': 1.2068, 'learning_rate': 4.8302e-06, 'epoch': 3.27, 'throughput': 5988.31}
+[INFO|2025-07-10 17:09:26] logging.py:143 >> {'loss': 1.2395, 'learning_rate': 4.7485e-06, 'epoch': 3.28, 'throughput': 5988.87}
+[INFO|2025-07-10 17:09:43] logging.py:143 >> {'loss': 1.2365, 'learning_rate': 4.6674e-06, 'epoch': 3.29, 'throughput': 5989.48}
+[INFO|2025-07-10 17:10:04] logging.py:143 >> {'loss': 1.1759, 'learning_rate': 4.5869e-06, 'epoch': 3.29, 'throughput': 5989.85}
+[INFO|2025-07-10 17:10:21] logging.py:143 >> {'loss': 1.2397, 'learning_rate': 4.5070e-06, 'epoch': 3.30, 'throughput': 5990.20}
+[INFO|2025-07-10 17:10:38] logging.py:143 >> {'loss': 1.2065, 'learning_rate': 4.4278e-06, 'epoch': 3.31, 'throughput': 5990.47}
+[INFO|2025-07-10 17:10:55] logging.py:143 >> {'loss': 1.2401, 'learning_rate': 4.3492e-06, 'epoch': 3.31, 'throughput': 5991.09}
+[INFO|2025-07-10 17:11:12] logging.py:143 >> {'loss': 1.1996, 'learning_rate': 4.2713e-06, 'epoch': 3.32, 'throughput': 5991.64}
+[INFO|2025-07-10 17:11:31] logging.py:143 >> {'loss': 1.2228, 'learning_rate': 4.1940e-06, 'epoch': 3.32, 'throughput': 5991.92}
+[INFO|2025-07-10 17:11:48] logging.py:143 >> {'loss': 1.1794, 'learning_rate': 4.1173e-06, 'epoch': 3.33, 'throughput': 5992.27}
+[INFO|2025-07-10 17:12:07] logging.py:143 >> {'loss': 1.1579, 'learning_rate': 4.0413e-06, 'epoch': 3.34, 'throughput': 5992.59}
+[INFO|2025-07-10 17:12:25] logging.py:143 >> {'loss': 1.1713, 'learning_rate': 3.9659e-06, 'epoch': 3.34, 'throughput': 5993.01}
+[INFO|2025-07-10 17:12:43] logging.py:143 >> {'loss': 1.1808, 'learning_rate': 3.8912e-06, 'epoch': 3.35, 'throughput': 5993.29}
+[INFO|2025-07-10 17:13:02] logging.py:143 >> {'loss': 1.1875, 'learning_rate': 3.8171e-06, 'epoch': 3.36, 'throughput': 5993.54}
+[INFO|2025-07-10 17:13:22] logging.py:143 >> {'loss': 1.1974, 'learning_rate': 3.7437e-06, 'epoch': 3.36, 'throughput': 5993.87}
+[INFO|2025-07-10 17:13:43] logging.py:143 >> {'loss': 1.1181, 'learning_rate': 3.6709e-06, 'epoch': 3.37, 'throughput': 5993.95}
+[INFO|2025-07-10 17:14:02] logging.py:143 >> {'loss': 1.2274, 'learning_rate': 3.5988e-06, 'epoch': 3.38, 'throughput': 5994.20}
+[INFO|2025-07-10 17:14:20] logging.py:143 >> {'loss': 1.2117, 'learning_rate': 3.5274e-06, 'epoch': 3.38, 'throughput': 5994.52}
+[INFO|2025-07-10 17:14:40] logging.py:143 >> {'loss': 1.1644, 'learning_rate': 3.4566e-06, 'epoch': 3.39, 'throughput': 5994.72}
+[INFO|2025-07-10 17:14:57] logging.py:143 >> {'loss': 1.1674, 'learning_rate': 3.3865e-06, 'epoch': 3.40, 'throughput': 5995.02}
+[INFO|2025-07-10 17:15:17] logging.py:143 >> {'loss': 1.1432, 'learning_rate': 3.3170e-06, 'epoch': 3.40, 'throughput': 5995.40}
+[INFO|2025-07-10 17:15:39] logging.py:143 >> {'loss': 1.1799, 'learning_rate': 3.2483e-06, 'epoch': 3.41, 'throughput': 5995.59}
+[INFO|2025-07-10 17:15:57] logging.py:143 >> {'loss': 1.1938, 'learning_rate': 3.1801e-06, 'epoch': 3.41, 'throughput': 5995.73}
+[INFO|2025-07-10 17:16:15] logging.py:143 >> {'loss': 1.2311, 'learning_rate': 3.1127e-06, 'epoch': 3.42, 'throughput': 5995.94}
+[INFO|2025-07-10 17:16:34] logging.py:143 >> {'loss': 1.1969, 'learning_rate': 3.0459e-06, 'epoch': 3.43, 'throughput': 5996.11}
+[INFO|2025-07-10 17:16:54] logging.py:143 >> {'loss': 1.1632, 'learning_rate': 2.9798e-06, 'epoch': 3.43, 'throughput': 5996.14}
+[INFO|2025-07-10 17:17:13] logging.py:143 >> {'loss': 1.1726, 'learning_rate': 2.9144e-06, 'epoch': 3.44, 'throughput': 5996.38}
+[INFO|2025-07-10 17:17:33] logging.py:143 >> {'loss': 1.1572, 'learning_rate': 2.8497e-06, 'epoch': 3.45, 'throughput': 5996.54}
+[INFO|2025-07-10 17:17:49] logging.py:143 >> {'loss': 1.1994, 'learning_rate': 2.7857e-06, 'epoch': 3.45, 'throughput': 5996.64}
+[INFO|2025-07-10 17:18:08] logging.py:143 >> {'loss': 1.1632, 'learning_rate': 2.7223e-06, 'epoch': 3.46, 'throughput': 5996.87}
+[INFO|2025-07-10 17:18:26] logging.py:143 >> {'loss': 1.1703, 'learning_rate': 2.6596e-06, 'epoch': 3.47, 'throughput': 5997.09}
+[INFO|2025-07-10 17:18:44] logging.py:143 >> {'loss': 1.1660, 'learning_rate': 2.5977e-06, 'epoch': 3.47, 'throughput': 5997.35}
+[INFO|2025-07-10 17:19:02] logging.py:143 >> {'loss': 1.2083, 'learning_rate': 2.5364e-06, 'epoch': 3.48, 'throughput': 5997.60}
+[INFO|2025-07-10 17:19:20] logging.py:143 >> {'loss': 1.2028, 'learning_rate': 2.4758e-06, 'epoch': 3.48, 'throughput': 5997.68}
+[INFO|2025-07-10 17:19:38] logging.py:143 >> {'loss': 1.1816, 'learning_rate': 2.4159e-06, 'epoch': 3.49, 'throughput': 5997.90}
+[INFO|2025-07-10 17:19:56] logging.py:143 >> {'loss': 1.1901, 'learning_rate': 2.3567e-06, 'epoch': 3.50, 'throughput': 5998.15}
+[INFO|2025-07-10 17:20:16] logging.py:143 >> {'loss': 1.1811, 'learning_rate': 2.2982e-06, 'epoch': 3.50, 'throughput': 5998.33}
+[INFO|2025-07-10 17:20:35] logging.py:143 >> {'loss': 1.1618, 'learning_rate': 2.2404e-06, 'epoch': 3.51, 'throughput': 5998.58}
+[INFO|2025-07-10 17:20:53] logging.py:143 >> {'loss': 1.2054, 'learning_rate': 2.1833e-06, 'epoch': 3.52, 'throughput': 5998.76}
+[INFO|2025-07-10 17:21:11] logging.py:143 >> {'loss': 1.1691, 'learning_rate': 2.1269e-06, 'epoch': 3.52, 'throughput': 5999.01}
+[INFO|2025-07-10 17:21:31] logging.py:143 >> {'loss': 1.1634, 'learning_rate': 2.0712e-06, 'epoch': 3.53, 'throughput': 5999.19}
+[INFO|2025-07-10 17:21:50] logging.py:143 >> {'loss': 1.1188, 'learning_rate': 2.0162e-06, 'epoch': 3.54, 'throughput': 5999.32}
+[INFO|2025-07-10 17:22:08] logging.py:143 >> {'loss': 1.1884, 'learning_rate': 1.9619e-06, 'epoch': 3.54, 'throughput': 5999.52}
+[INFO|2025-07-10 17:22:26] logging.py:143 >> {'loss': 1.1493, 'learning_rate': 1.9083e-06, 'epoch': 3.55, 'throughput': 5999.70}
+[INFO|2025-07-10 17:22:44] logging.py:143 >> {'loss': 1.2723, 'learning_rate': 1.8555e-06, 'epoch': 3.56, 'throughput': 5999.96}
+[INFO|2025-07-10 17:23:03] logging.py:143 >> {'loss': 1.2097, 'learning_rate': 1.8033e-06, 'epoch': 3.56, 'throughput': 6000.16}
+[INFO|2025-07-10 17:23:20] logging.py:143 >> {'loss': 1.1992, 'learning_rate': 1.7519e-06, 'epoch': 3.57, 'throughput': 6000.38}
+[INFO|2025-07-10 17:23:38] logging.py:143 >> {'loss': 1.2300, 'learning_rate': 1.7012e-06, 'epoch': 3.57, 'throughput': 6000.61}
+[INFO|2025-07-10 17:23:57] logging.py:143 >> {'loss': 1.2209, 'learning_rate': 1.6512e-06, 'epoch': 3.58, 'throughput': 6000.82}
+[INFO|2025-07-10 17:24:16] logging.py:143 >> {'loss': 1.1356, 'learning_rate': 1.6019e-06, 'epoch': 3.59, 'throughput': 6000.97}
+[INFO|2025-07-10 17:24:36] logging.py:143 >> {'loss': 1.1683, 'learning_rate': 1.5534e-06, 'epoch': 3.59, 'throughput': 6001.17}
+[INFO|2025-07-10 17:24:55] logging.py:143 >> {'loss': 1.1639, 'learning_rate': 1.5056e-06, 'epoch': 3.60, 'throughput': 6001.37}
+[INFO|2025-07-10 17:25:14] logging.py:143 >> {'loss': 1.2072, 'learning_rate': 1.4585e-06, 'epoch': 3.61, 'throughput': 6001.56}
+[INFO|2025-07-10 17:25:31] logging.py:143 >> {'loss': 1.2018, 'learning_rate': 1.4121e-06, 'epoch': 3.61, 'throughput': 6001.79}
+[INFO|2025-07-10 17:25:50] logging.py:143 >> {'loss': 1.2264, 'learning_rate': 1.3665e-06, 'epoch': 3.62, 'throughput': 6002.02}
+[INFO|2025-07-10 17:26:09] logging.py:143 >> {'loss': 1.2376, 'learning_rate': 1.3215e-06, 'epoch': 3.63, 'throughput': 6002.24}
+[INFO|2025-07-10 17:26:29] logging.py:143 >> {'loss': 1.1496, 'learning_rate': 1.2774e-06, 'epoch': 3.63, 'throughput': 6002.34}
+[INFO|2025-07-10 17:26:51] logging.py:143 >> {'loss': 1.1538, 'learning_rate': 1.2339e-06, 'epoch': 3.64, 'throughput': 6002.43}
+[INFO|2025-07-10 17:27:10] logging.py:143 >> {'loss': 1.2022, 'learning_rate': 1.1912e-06, 'epoch': 3.64, 'throughput': 6002.60}
+[INFO|2025-07-10 17:27:28] logging.py:143 >> {'loss': 1.2222, 'learning_rate': 1.1492e-06, 'epoch': 3.65, 'throughput': 6002.80}
+[INFO|2025-07-10 17:27:46] logging.py:143 >> {'loss': 1.1971, 'learning_rate': 1.1080e-06, 'epoch': 3.66, 'throughput': 6003.01}
+[INFO|2025-07-10 17:28:04] logging.py:143 >> {'loss': 1.2369, 'learning_rate': 1.0674e-06, 'epoch': 3.66, 'throughput': 6003.29}
+[INFO|2025-07-10 17:28:22] logging.py:143 >> {'loss': 1.1732, 'learning_rate': 1.0277e-06, 'epoch': 3.67, 'throughput': 6003.61}
+[INFO|2025-07-10 17:28:40] logging.py:143 >> {'loss': 1.1803, 'learning_rate': 9.8863e-07, 'epoch': 3.68, 'throughput': 6004.10}
+[INFO|2025-07-10 17:28:59] logging.py:143 >> {'loss': 1.1496, 'learning_rate': 9.5034e-07, 'epoch': 3.68, 'throughput': 6004.41}
+[INFO|2025-07-10 17:29:17] logging.py:143 >> {'loss': 1.2419, 'learning_rate': 9.1279e-07, 'epoch': 3.69, 'throughput': 6004.92}
+[INFO|2025-07-10 17:29:36] logging.py:143 >> {'loss': 1.1815, 'learning_rate': 8.7598e-07, 'epoch': 3.70, 'throughput': 6005.43}
+[INFO|2025-07-10 17:29:54] logging.py:143 >> {'loss': 1.2066, 'learning_rate': 8.3992e-07, 'epoch': 3.70, 'throughput': 6005.86}
+[INFO|2025-07-10 17:30:12] logging.py:143 >> {'loss': 1.1570, 'learning_rate': 8.0460e-07, 'epoch': 3.71, 'throughput': 6006.34}
+[INFO|2025-07-10 17:30:32] logging.py:143 >> {'loss': 1.1950, 'learning_rate': 7.7003e-07, 'epoch': 3.71, 'throughput': 6006.74}
+[INFO|2025-07-10 17:30:50] logging.py:143 >> {'loss': 1.1283, 'learning_rate': 7.3620e-07, 'epoch': 3.72, 'throughput': 6007.09}
+[INFO|2025-07-10 17:31:08] logging.py:143 >> {'loss': 1.2086, 'learning_rate': 7.0312e-07, 'epoch': 3.73, 'throughput': 6007.36}
+[INFO|2025-07-10 17:31:25] logging.py:143 >> {'loss': 1.2058, 'learning_rate': 6.7080e-07, 'epoch': 3.73, 'throughput': 6007.67}
+[INFO|2025-07-10 17:31:46] logging.py:143 >> {'loss': 1.2037, 'learning_rate': 6.3922e-07, 'epoch': 3.74, 'throughput': 6007.87}
+[INFO|2025-07-10 17:32:04] logging.py:143 >> {'loss': 1.1904, 'learning_rate': 6.0840e-07, 'epoch': 3.75, 'throughput': 6008.12}
+[INFO|2025-07-10 17:32:22] logging.py:143 >> {'loss': 1.2212, 'learning_rate': 5.7833e-07, 'epoch': 3.75, 'throughput': 6008.42}
+[INFO|2025-07-10 17:32:39] logging.py:143 >> {'loss': 1.1832, 'learning_rate': 5.4901e-07, 'epoch': 3.76, 'throughput': 6008.92}
+[INFO|2025-07-10 17:32:57] logging.py:143 >> {'loss': 1.1791, 'learning_rate': 5.2044e-07, 'epoch': 3.77, 'throughput': 6009.40}
+[INFO|2025-07-10 17:33:14] logging.py:143 >> {'loss': 1.1856, 'learning_rate': 4.9264e-07, 'epoch': 3.77, 'throughput': 6009.82}
+[INFO|2025-07-10 17:33:32] logging.py:143 >> {'loss': 1.1860, 'learning_rate': 4.6558e-07, 'epoch': 3.78, 'throughput': 6010.06}
+[INFO|2025-07-10 17:33:50] logging.py:143 >> {'loss': 1.2001, 'learning_rate': 4.3929e-07, 'epoch': 3.79, 'throughput': 6010.38}
+[INFO|2025-07-10 17:34:09] logging.py:143 >> {'loss': 1.1780, 'learning_rate': 4.1375e-07, 'epoch': 3.79, 'throughput': 6010.59}
+[INFO|2025-07-10 17:34:28] logging.py:143 >> {'loss': 1.1649, 'learning_rate': 3.8897e-07, 'epoch': 3.80, 'throughput': 6010.79}
+[INFO|2025-07-10 17:34:48] logging.py:143 >> {'loss': 1.1847, 'learning_rate': 3.6495e-07, 'epoch': 3.80, 'throughput': 6011.22}
+[INFO|2025-07-10 17:35:05] logging.py:143 >> {'loss': 1.1825, 'learning_rate': 3.4169e-07, 'epoch': 3.81, 'throughput': 6011.61}
+[INFO|2025-07-10 17:35:23] logging.py:143 >> {'loss': 1.1773, 'learning_rate': 3.1919e-07, 'epoch': 3.82, 'throughput': 6011.93}
+[INFO|2025-07-10 17:35:41] logging.py:143 >> {'loss': 1.1696, 'learning_rate': 2.9745e-07, 'epoch': 3.82, 'throughput': 6012.24}
+[INFO|2025-07-10 17:36:00] logging.py:143 >> {'loss': 1.2124, 'learning_rate': 2.7648e-07, 'epoch': 3.83, 'throughput': 6012.51}
+[INFO|2025-07-10 17:36:18] logging.py:143 >> {'loss': 1.1761, 'learning_rate': 2.5626e-07, 'epoch': 3.84, 'throughput': 6012.81}
+[INFO|2025-07-10 17:36:18] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 17:36:18] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 17:36:18] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 17:37:50] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3000
+[INFO|2025-07-10 17:37:50] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 17:37:50] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 17:37:50] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3000/chat_template.jinja
+[INFO|2025-07-10 17:37:50] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3000/tokenizer_config.json
+[INFO|2025-07-10 17:37:50] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3000/special_tokens_map.json
+[INFO|2025-07-10 17:38:11] logging.py:143 >> {'loss': 1.1995, 'learning_rate': 2.3681e-07, 'epoch': 3.84, 'throughput': 5964.48}
+[INFO|2025-07-10 17:38:30] logging.py:143 >> {'loss': 1.2171, 'learning_rate': 2.1813e-07, 'epoch': 3.85, 'throughput': 5964.84}
+[INFO|2025-07-10 17:38:47] logging.py:143 >> {'loss': 1.1894, 'learning_rate': 2.0021e-07, 'epoch': 3.86, 'throughput': 5965.35}
+[INFO|2025-07-10 17:39:07] logging.py:143 >> {'loss': 1.2533, 'learning_rate': 1.8305e-07, 'epoch': 3.86, 'throughput': 5965.68}
+[INFO|2025-07-10 17:39:25] logging.py:143 >> {'loss': 1.2175, 'learning_rate': 1.6666e-07, 'epoch': 3.87, 'throughput': 5965.96}
+[INFO|2025-07-10 17:39:42] logging.py:143 >> {'loss': 1.2121, 'learning_rate': 1.5104e-07, 'epoch': 3.87, 'throughput': 5966.35}
+[INFO|2025-07-10 17:40:00] logging.py:143 >> {'loss': 1.1962, 'learning_rate': 1.3618e-07, 'epoch': 3.88, 'throughput': 5966.77}
+[INFO|2025-07-10 17:40:19] logging.py:143 >> {'loss': 1.1838, 'learning_rate': 1.2209e-07, 'epoch': 3.89, 'throughput': 5967.16}
+[INFO|2025-07-10 17:40:38] logging.py:143 >> {'loss': 1.1249, 'learning_rate': 1.0877e-07, 'epoch': 3.89, 'throughput': 5967.62}
+[INFO|2025-07-10 17:40:55] logging.py:143 >> {'loss': 1.2524, 'learning_rate': 9.6211e-08, 'epoch': 3.90, 'throughput': 5968.16}
+[INFO|2025-07-10 17:41:14] logging.py:143 >> {'loss': 1.1762, 'learning_rate': 8.4425e-08, 'epoch': 3.91, 'throughput': 5968.69}
+[INFO|2025-07-10 17:41:32] logging.py:143 >> {'loss': 1.1854, 'learning_rate': 7.3407e-08, 'epoch': 3.91, 'throughput': 5969.14}
+[INFO|2025-07-10 17:41:51] logging.py:143 >> {'loss': 1.1842, 'learning_rate': 6.3158e-08, 'epoch': 3.92, 'throughput': 5969.44}
+[INFO|2025-07-10 17:42:11] logging.py:143 >> {'loss': 1.1819, 'learning_rate': 5.3678e-08, 'epoch': 3.93, 'throughput': 5969.78}
+[INFO|2025-07-10 17:42:29] logging.py:143 >> {'loss': 1.1898, 'learning_rate': 4.4968e-08, 'epoch': 3.93, 'throughput': 5970.25}
+[INFO|2025-07-10 17:42:48] logging.py:143 >> {'loss': 1.1745, 'learning_rate': 3.7028e-08, 'epoch': 3.94, 'throughput': 5970.68}
+[INFO|2025-07-10 17:43:05] logging.py:143 >> {'loss': 1.2171, 'learning_rate': 2.9859e-08, 'epoch': 3.95, 'throughput': 5971.17}
+[INFO|2025-07-10 17:43:22] logging.py:143 >> {'loss': 1.2435, 'learning_rate': 2.3459e-08, 'epoch': 3.95, 'throughput': 5971.58}
+[INFO|2025-07-10 17:43:40] logging.py:143 >> {'loss': 1.2035, 'learning_rate': 1.7830e-08, 'epoch': 3.96, 'throughput': 5971.93}
+[INFO|2025-07-10 17:43:58] logging.py:143 >> {'loss': 1.2152, 'learning_rate': 1.2972e-08, 'epoch': 3.96, 'throughput': 5972.36}
+[INFO|2025-07-10 17:44:17] logging.py:143 >> {'loss': 1.1896, 'learning_rate': 8.8848e-09, 'epoch': 3.97, 'throughput': 5972.72}
+[INFO|2025-07-10 17:44:36] logging.py:143 >> {'loss': 1.1959, 'learning_rate': 5.5685e-09, 'epoch': 3.98, 'throughput': 5973.19}
+[INFO|2025-07-10 17:44:54] logging.py:143 >> {'loss': 1.1645, 'learning_rate': 3.0234e-09, 'epoch': 3.98, 'throughput': 5973.36}
+[INFO|2025-07-10 17:45:13] logging.py:143 >> {'loss': 1.1306, 'learning_rate': 1.2495e-09, 'epoch': 3.99, 'throughput': 5973.70}
+[INFO|2025-07-10 17:45:31] logging.py:143 >> {'loss': 1.2452, 'learning_rate': 2.4681e-10, 'epoch': 4.00, 'throughput': 5973.99}
+[INFO|2025-07-10 17:45:42] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3128
+[INFO|2025-07-10 17:45:42] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 17:45:42] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 17:45:42] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3128/chat_template.jinja
+[INFO|2025-07-10 17:45:42] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3128/tokenizer_config.json
+[INFO|2025-07-10 17:45:42] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/checkpoint-3128/special_tokens_map.json
+[INFO|2025-07-10 17:45:42] trainer.py:2676 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+[INFO|2025-07-10 17:45:42] trainer.py:3993 >> Saving model checkpoint to saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21
+[INFO|2025-07-10 17:45:43] configuration_utils.py:696 >> loading configuration file <LOCAL_QWEN2_5_1_5B_INSTRUCT_PATH>/config.json
+[INFO|2025-07-10 17:45:43] configuration_utils.py:770 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.52.4",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-07-10 17:45:43] tokenization_utils_base.py:2356 >> chat template saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/chat_template.jinja
+[INFO|2025-07-10 17:45:43] tokenization_utils_base.py:2525 >> tokenizer config file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/tokenizer_config.json
+[INFO|2025-07-10 17:45:43] tokenization_utils_base.py:2534 >> Special tokens file saved in saves/Qwen2.5-1.5B-Instruct/lora/train_2025-07-10-14-16-21/special_tokens_map.json
+[WARNING|2025-07-10 17:45:43] logging.py:148 >> No metric eval_accuracy to plot.
+[INFO|2025-07-10 17:45:43] trainer.py:4327 >> 
+***** Running Evaluation *****
+[INFO|2025-07-10 17:45:43] trainer.py:4329 >>   Num examples = 2781
+[INFO|2025-07-10 17:45:43] trainer.py:4332 >>   Batch size = 4
+[INFO|2025-07-10 17:47:15] modelcard.py:450 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

@@ -1,0 +1,3 @@
+﻿retrieval_configuration,top_k,reranker,n_total,n_objective,n_parseable_objective,n_manual_review_objective,parse_rate_objective,correct_parseable_objective,accuracy_parseable_objective,accuracy_lower_bound_manual_review_wrong,mean_generation_time_sec,sd_generation_time_sec
+RAG-A_top3_no_reranker,3,none,1100,1100,1048,52,0.9527272727272728,858,0.8187022900763359,0.78,2.002505908179605,1.061543703159902
+RAG-B_top5_no_reranker,5,none,1100,1100,1067,33,0.97,875,0.8200562324273665,0.7954545454545454,1.8048726669345474,1.0937067193289816

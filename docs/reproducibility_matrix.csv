@@ -1,0 +1,6 @@
+experiment_id,model,dataset,dataset_public,config_public,code_public,log_public,raw_result_public,aggregated_result_public,fully_reproducible_from_public_repo,notes
+qwen2.5-1.5b_16k_2epoch,Qwen2.5-1.5B-Instruct,Dataset-16k,yes,yes,yes,partial,partial,yes,partial_smoke_test_only,Full training requires GPU/base model; public data available.
+final_mer_30k_4epoch,Qwen2.5-1.5B-Instruct,Dataset-30k,no,yes,yes,yes,yes,yes,no,Configuration reproducible; data restricted.
+qwen2.5-1.5b_46k,Qwen2.5-1.5B-Instruct,Dataset-46k,no,partial,yes,partial,partial,yes,no,Configuration/log evidence only.
+rag_topk_sensitivity,Qwen2.5-1.5B-Instruct,RAG knowledge base,unknown,yes,yes,n/a,yes,yes,partial,Knowledge-base redistribution requires author confirmation.
+engineering_benchmark,Base and MER,prompt subset,yes,yes,partial,yes,yes,yes,partial,Requires similar GPU and local model files.

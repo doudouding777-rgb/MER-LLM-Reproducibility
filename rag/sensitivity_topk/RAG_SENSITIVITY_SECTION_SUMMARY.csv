@@ -1,0 +1,9 @@
+configuration,section,n,parsed,manual_review,correct_among_parsed,parse_rate,parsed_accuracy,lower_bound_accuracy
+RAG-A_top3_no_reranker,Set1_choice,550,538,12,489,0.9781818,0.9089219,0.8890909
+RAG-A_top3_no_reranker,Set2_choice,300,283,17,207,0.9433333,0.7314488,0.69
+RAG-A_top3_no_reranker,Set2_judge,250,227,23,162,0.908,0.7136564,0.648
+RAG-A_top3_no_reranker,All_objective,1100,1048,52,858,0.9527273,0.8187023,0.78
+RAG-B_top5_no_reranker,Set1_choice,550,544,6,495,0.9890909,0.9099265,0.9
+RAG-B_top5_no_reranker,Set2_choice,300,291,9,211,0.97,0.7250859,0.7033333
+RAG-B_top5_no_reranker,Set2_judge,250,232,18,169,0.928,0.7284483,0.676
+RAG-B_top5_no_reranker,All_objective,1100,1067,33,875,0.97,0.8200562,0.7954545
