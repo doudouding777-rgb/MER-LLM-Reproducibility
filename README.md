@@ -16,6 +16,7 @@ Public in this repository:
 - preprocessing scripts and public examples
 - training configuration, LoRA adapter metadata, and sanitized logs
 - objective paired statistics and McNemar analysis
+- targeted base-evaluation correction evidence for Qwen1.5-4B-Chat / Dataset-16k / 2 epochs
 - configuration-level expert scoring summaries and ICC evidence
 - RAG workflow configuration and sensitivity outputs
 - engineering benchmark configuration and outputs
